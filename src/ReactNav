@@ -1,0 +1,40 @@
+         <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+          <a className="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="" /></a>
+          
+          <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i className="fas fa-bars ml-1"></i>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarResponsive">
+            Left side of navbar
+
+
+            <ul className="navbar-nav text-uppercase">
+              <li className="float-left nav-item pos-rel"><a className="nav-link js-scroll-trigger" href="#about">Home</a></li>
+              <li className="float-left nav-item pos-rel"><a className="nav-link js-scroll-trigger" href="#store">Portfolio</a></li> 
+              <NavLink text={"Home"}>
+              </NavLink>
+              <NavLink text={"About"}>
+                <DropdownMenu id="about"/>
+              </NavLink>
+              <NavLink text={"Contact"}>
+                <DropdownMenu id="contact"/>
+              </NavLink>
+              <NavLink text={"Portfolio"}>
+                <DropdownMenu od="portfolio"/>
+              </NavLink>
+            </ul>
+
+            {/* Right side of navbar */}
+            <ul className="navbar-nav text-uppercase ml-auto">
+              <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#gmail">Gmail</a></li>
+              <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#images">Images</a></li>
+              <li className="nav-item"><a id="menuBtn" className="btn btn-social mx-2 small-btn" href="#!"><img src={MenuIcon} alt="#"/></a></li>
+              {
+                  <NavIcon icon={<UserIcon2/>}>
+                    <DropdownMenu id="dd"/>
+                  </NavIcon>
+              }     
+            </ul>
+          </div>
+        </nav> 
