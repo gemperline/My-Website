@@ -84,7 +84,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 p {
@@ -10738,7 +10738,7 @@ img#connectBtn:hover, img#connectBtn:active {
 /* <nav> */
 .navbar2 {
   background-color: none;
-  padding: 0 1rem;
+  padding: 0;
   max-width: 50px;
 }
 
@@ -10749,6 +10749,7 @@ img#connectBtn:hover, img#connectBtn:active {
   display: flex;
   justify-content: flex-end;
   background-color: transparent;
+  padding: 0;
 }
 
 /* <li> */
@@ -10830,7 +10831,7 @@ a.nav2-link {
   overflow: hidden;
   transition: height var(--speed) ease;
   opacity: 80%;
-  left: calc(50%);
+  left: calc(50% - 25px);
 }
 
 /* Dashboard Icon Button */
@@ -11293,7 +11294,7 @@ span .fa-plus {
   }
 
 .left-col {
-  color: #00E2AC;
+  color: #7701a5;
   padding: 20px;
   text-align: right;
   text-transform: uppercase;
@@ -11305,6 +11306,9 @@ span .fa-plus {
   font-size: 50px;
   font-weight: 700;
   line-height: 55px;
+}
+.right-col a:hover {
+  color: #7701a5;
 }
 
 .white-trans {

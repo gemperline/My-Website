@@ -31,7 +31,7 @@ export function CustomNavBar() {
                     <li><a href="#">Adam's GitHub</a></li>
                     <li>
                     <label for="btn-3" className="show">Work Samples +</label>
-                    <a href="#" id="hidden-submenu">Work Samples <img src={CaretRight} alt=">" id="caret"/></a>
+                    <a href="#" id="hidden-submenu">Work Samples <CaretRight id="caret" alt=">"/></a>
                     <input type="checkbox" id="btn-3"/>
                     <ul>
                         <li><a href="#">Database Tool</a></li>

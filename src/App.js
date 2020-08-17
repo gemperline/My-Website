@@ -134,7 +134,7 @@ class App extends React.Component {
             {/* right  */}
             <div className="col-lg-4 text-lg-right pad-right-10">
               <div class="copyright">
-                <span>&copy; Adam Gemperline</span>
+                <span>© Adam Gemperline</span>
               </div>
             </div>
           </div>
