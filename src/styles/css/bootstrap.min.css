@@ -10798,10 +10798,10 @@ a.nav2-link {
 
 
 /* Dropdown Menu */
-.dropdown {
+/* .dropdown {
   position: absolute;
   top: 40px;
-  /* width: 15rem; */
+  width: 15rem;
   transform: translateX(-45%);
   background-color: #000;
   border-width: 0.3rem;
@@ -10813,10 +10813,10 @@ a.nav2-link {
   transition: width var(--speed) ease;
   transition: height var(--speed) ease;
   opacity: 80%;
-}
+} */
 
 /* Popup Dashboard Menu */
-/* .dashboard {
+.dashboard {
   position: absolute;
   bottom:4.25rem;
   max-width: 1500px;
@@ -10832,7 +10832,7 @@ a.nav2-link {
   transition: height var(--speed) ease;
   opacity: 80%;
   left: calc(50% - 25px);
-} */
+}
 
 /* Dashboard Icon Button */
 .dash-icon-button {
