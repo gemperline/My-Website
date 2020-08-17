@@ -20,6 +20,9 @@ import { ReactComponent as ConnectButton} from './styles/icons/user-circle.svg';
 import './App.css';
 import './styles/css/bootstrap.min.css';
 
+// Transition theme
+import { CSSTransition } from 'react-transition-group';
+
 class App extends React.Component {
   render() {
     return (
