@@ -10816,7 +10816,7 @@ a.nav2-link {
 }
 
 /* Popup Dashboard Menu */
-.dashboard {
+/* .dashboard {
   position: absolute;
   bottom:4.25rem;
   max-width: 1500px;
@@ -10832,7 +10832,7 @@ a.nav2-link {
   transition: height var(--speed) ease;
   opacity: 80%;
   left: calc(50% - 25px);
-}
+} */
 
 /* Dashboard Icon Button */
 .dash-icon-button {
