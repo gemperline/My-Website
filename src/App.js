@@ -47,7 +47,7 @@ class App extends React.Component {
               </div>
               <div className="row pad-top">
                 <div className="col-xl-9 mx-auto">
-                  <div className="ag-logo">
+                  <div className="ag-logo" alt="" width="500" height="500">
                     <img src={AG_Logo} alt="AG"/>
                   </div>
                 </div>

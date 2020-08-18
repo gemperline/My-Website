@@ -10534,7 +10534,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .ag-logo {
-    height: inherit;
     background-repeat: no-repeat;
     margin-bottom: 1rem;
     margin: auto;
@@ -10547,6 +10546,9 @@ section#contact form#contactForm :-ms-input-placeholder {
     position: fixed;
     opacity: 0.3;
     z-index: -2;
+    width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
 }
 
 body, td, a, p, .h {
