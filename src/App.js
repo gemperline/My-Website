@@ -12,6 +12,7 @@ import { CustomNavBar }   from './components/Navbar.jsx';
 
 // Images
 import AG_Logo from './styles/img/AG_logo.jpg';
+import Palms from './styles/img/palms.jpg';
 
 // Buttons and Icons
 import { ReactComponent as ConnectButton} from './styles/icons/user-circle.svg';
@@ -35,7 +36,7 @@ class App extends React.Component {
           <div className="overlay">
             <div className="container">
               <div id="intro" className="container-fluid hero">
-                  <div className="hero contact-content col-9">
+                  <div className="hero intro-content col-9">
                     <h1>Adam Gemperline</h1>
                     <h5>Software Dev | Web Design</h5>
                     <a href="#gallery">
@@ -52,67 +53,78 @@ class App extends React.Component {
                 </div>
               </div>
 
-  
-  
-              {/* Search bar row */}
-              {/* <div className="row search-bar-margin ht-50">
-                <div className="col-md-10 col-lg-8 col-xl-7 mx-auto inherit-ht">
-                  <form className="inherit-ht">
-                    <div className="form-row inherit-ht">
-                      <div className="col-12 col-md-9 mb-2 mb-md-0">
-                        <input type="form" className="form-control form-control-lg" placeholder="Search"/>
-                      </div>
-                      <div className="col-12 col-md-3 inherit-ht">
-                        <button type="submit" className="btn btn-block btn-lg btn-primary inherit-ht">
-                          <img id="search-img" src={SearchIcon} alt="SEARCH"/>
-                          </button>
-                      </div>
+
+
+            {/* Search bar row */}
+            {/* <div className="row search-bar-margin ht-50">
+              <div className="col-md-10 col-lg-8 col-xl-7 mx-auto inherit-ht">
+                <form className="inherit-ht">
+                  <div className="form-row inherit-ht">
+                    <div className="col-12 col-md-9 mb-2 mb-md-0">
+                      <input type="form" className="form-control form-control-lg" placeholder="Search"/>
                     </div>
-                  </form>
-                </div>
-              </div> */}
-  
-              {/* Lower buttons row */}
-              {/* <div className="row search-bar-margin ht-50  mg-top-30">
-                <div className="col-md-10 col-lg-8 col-xl-7 mx-auto inherit-ht">
-                  <div className="form-row inherit-ht btn-block">
-                    <input className="gbqfba tfB0Bf gNO89b jhp mg-right-15" value="Google Search" aria-label="Google Search" name="btnK" type="submit" data-ved="0ahUKEwjepZLJiKbqAhXjIDQ"/>
-                    <input id="gbqfbb" className="tfB0Bf gbqfba jhp inherit-vis mg-left-15" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnJ" type="submit"/>
+                    <div className="col-12 col-md-3 inherit-ht">
+                      <button type="submit" className="btn btn-block btn-lg btn-primary inherit-ht">
+                        <img id="search-img" src={SearchIcon} alt="SEARCH"/>
+                        </button>
+                    </div>
                   </div>
+                </form>
+              </div>
+            </div> */}
+
+            {/* Lower buttons row */}
+            {/* <div className="row search-bar-margin ht-50  mg-top-30">
+              <div className="col-md-10 col-lg-8 col-xl-7 mx-auto inherit-ht">
+                <div className="form-row inherit-ht btn-block">
+                  <input className="gbqfba tfB0Bf gNO89b jhp mg-right-15" value="Google Search" aria-label="Google Search" name="btnK" type="submit" data-ved="0ahUKEwjepZLJiKbqAhXjIDQ"/>
+                  <input id="gbqfbb" className="tfB0Bf gbqfba jhp inherit-vis mg-left-15" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnJ" type="submit"/>
                 </div>
               </div>
-              <div className="mg-top-30"><a id="promo-link" className="promo-link" href="#!">Join YouTube Creators in Commemorating Pride Month</a></div> */}
-                
             </div>
-          </header>
+            <div className="mg-top-30"><a id="promo-link" className="promo-link" href="#!">Join YouTube Creators in Commemorating Pride Month</a></div> */}
+              
+          </div>
+        </header>
   
-          {/* Lower Content */}
-          <div id="spacer" class="container-fluid">
-              <div class="row">
-                <div class="col-md-6 left-col">
-                </div>
-                <div class="col-md-6 right-col">
-                </div>
+        {/* About */}
+        <div id="spacer" className="container-fluid">
+            <div className="row">
+              <div className="col-md-6 left-col">
               </div>
-            </div> 
-          <div id="about" class="container-fluid hero white-trans">
-            <h2 className="header-txt">About</h2>
-            <div class="row">
-              <div class="col-md-6 left-col">
-                <h2> I'm a forward-thinking, innovative techie who likes to create technology that strengthens social interaction and promotes human development.</h2>
-              </div>
-              <div class="col-md-6 right-col">
-                <h5>I was born in <a href='https://www.google.com/maps/place/Dayton,+OH/@39.8112442,-84.3422415,11z/data=!3m1!4b1!4m5!3m4!1s0x884080d5aedd1403:0xa640e392f20e4ce4!8m2!3d39.7589478!4d-84.1916069' target='_blank'>Dayton, Ohio</a> and moved to the west coast in my early twenties. I have a passion for developing innovative technology that empowers people to connect with one another and improve their level of efficiency. In my free time, I enjoy camping, stargazing, attending music events, traveling the world, pressing buttons, and meeting new people.</h5>
+              <div className="col-md-6 right-col">
               </div>
             </div>
-            <div id="spacer" class="container-fluid">
-              <div class="row">
-                <div class="col-md-6 left-col">
-                </div>
-                <div class="col-md-6 right-col">
-                </div>
+        </div> 
+        <div id="about" className="container-fluid hero white-trans">
+          <h2 classNameName="header-txt">About</h2>
+          <div className="row">
+            <div className="col-md-6 left-col">
+              <h2> I'm a forward-thinking, innovative techie who likes to create technology that strengthens social interaction and promotes human development.</h2>
+            </div>
+            <div className="col-md-6 right-col">
+              <h5>I was born in <a href='https://www.google.com/maps/place/Dayton,+OH/@39.8112442,-84.3422415,11z/data=!3m1!4b1!4m5!3m4!1s0x884080d5aedd1403:0xa640e392f20e4ce4!8m2!3d39.7589478!4d-84.1916069' target='_blank'>Dayton, Ohio</a> and moved to the west coast in my early twenties. I have a passion for developing innovative technology that empowers people to connect with one another and improve their level of efficiency. In my free time, I enjoy camping, stargazing, attending music events, traveling the world, pressing buttons, and meeting new people.</h5>
+            </div>
+          </div>
+          <div id="spacer" className="container-fluid">
+            <div className="row">
+              <div className="col-md-6 left-col">
               </div>
-            </div> 
+              <div className="col-md-6 right-col">
+              </div>
+            </div>
+        </div> 
+        {/* Contact */}
+        <div id="contact" className="container-fluid hero contact-background">
+          <img src={Palms}/>
+          <div className="hero contact-content">
+            <h2>Contact Me</h2>
+            <p>I'm interested in learing about new opportunities from software 
+              development to web design &ndash; let's chat!
+            </p>
+            <a href="#" data-toggle="modal" data-target="#message-modal"><button type="button" className="cta">Contact</button></a>
+          </div>
+        </div>
   
         
         {/* Footer items */}
@@ -120,9 +132,9 @@ class App extends React.Component {
           <div className="row align-items-center">
             {/* left  */}
             <div className="col-lg-4 text-lg-left">
-                  <a className="mr-3 ml-3" href="#!">Advertising</a>
-                  <a className="mr-3" href="#!">Business</a>
-                  <a className="mr-3" href="#!">How Search Works</a>
+                  <a className="mr-3 ml-3" href="#">Home</a>
+                  <a className="mr-3" href="#about">About</a>
+                  <a className="mr-3" href="#contact">Contact</a>
             </div>
             {/* center */}
             <div id="midFooter" className="col-lg-4 my-3 my-lg-0">

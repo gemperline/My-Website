@@ -10826,7 +10826,7 @@ a.nav2-link {
   border-width: 3px;
   border-style: solid;
   border-radius: 1rem;
-  border-color: #00b92e;
+  border-color: #00d9ff;
   padding: 0.25rem;
   overflow: hidden;
   transition: height var(--speed) ease;
@@ -10896,7 +10896,7 @@ a.nav2-link {
   background-color: #ffd931;
 }
 .dash-item:hover {
-  background-color: #525357;
+  background-color: #848486;
 }
 
 .icon-right {
@@ -11237,7 +11237,7 @@ span .fa-plus {
   margin-bottom: 40px;
   max-width: 740px; 
 }
-.contact-content {
+.intro-content {
   position: absolute;
   top: 35%;
   left: 50%;
@@ -11247,6 +11247,30 @@ span .fa-plus {
   flex-wrap: row nowrap;
   justify-content: flex-start;
   margin: auto;
+}
+.contact-content {
+  position: absolute;
+  left: calc(50%);
+  transform: translate(-50%, -50%);
+  color: #000;
+  flex: content;
+  flex-wrap: row nowrap;
+  justify-content: flex-start;
+  margin: 0;
+}
+.contact-content p {
+  width: 50%;
+}
+.contact-background {
+  text-align: center;
+}
+
+.contact-background img {
+   z-index: 0;
+   padding: 0px;
+   align-items: center;
+   max-height: 950px;
+   width: 100%;
 }
 .container-fluid {
   position: inherit;
@@ -11276,17 +11300,21 @@ span .fa-plus {
   font-size: 18px;
   line-height: 50px;
   border: none;
-  border-radius: 4px;
   cursor: pointer; 
+  border-radius: 30px;
 }
 .cta:hover {
-  background-color: #00CFFF; 
+  box-shadow: 0 0 15px #00d9ff,
+  0 0 15px #00d9ff;
 }
 
 /* Lower Content */
 #about::before #about::after {
   min-height: 0;
   }
+#about {
+  display: inline-block;
+}
 #spacer {
       height: 500px;
       width: auto;
@@ -11312,7 +11340,6 @@ span .fa-plus {
 
 .white-trans {
   background-color: rgba(255, 255, 255, 0.65);
-  max-height: 800px;
 }
 
 .right-col {

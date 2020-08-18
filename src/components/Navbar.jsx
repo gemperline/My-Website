@@ -20,7 +20,7 @@ export function CustomNavBar() {
             <input type="checkbox" id="btn"></input>
             <ul>
                 <li className="violet"><a href="#">Home</a></li>
-                <li className="blue"><a href="#">About</a></li>
+                <li className="blue"><a href="#about">About</a></li>
                 <li className="green"><a href="#">Resume</a></li>
                 <li className="yellow">
                 <label for="btn-1" className="show">Portfolio +</label>
@@ -28,7 +28,7 @@ export function CustomNavBar() {
                 <input type="checkbox" id="btn-1"/>
                 <ul className="yellow-top">
                     <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Adam's GitHub</a></li>
+                    <li><a href="https://github.com/gemperline" target="_blank">Adam's GitHub</a></li>
                     <li>
                     <label for="btn-3" className="show">Work Samples +</label>
                     <a href="#" id="hidden-submenu">Work Samples <CaretRight id="caret" alt=">"/></a>
@@ -43,11 +43,11 @@ export function CustomNavBar() {
                 </li>
                 <li className="orange">
                 <label for="btn-2" className="show">Contact +</label>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
                 <input type="checkbox" id="btn-2"/>
                 <ul className="orange-top">
                     <li><a href="#">Message Me</a></li>
-                    <li><a href="#">Contact Info</a></li>
+                    <li><a href="#contact">Contact Info</a></li>
                 </ul>
                 </li>             
             </ul>
