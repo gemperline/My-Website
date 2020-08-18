@@ -162,6 +162,7 @@ class App extends React.Component {
             <div className="col-lg-4 text-lg-left">
                   <a className="mr-3 ml-3" href="#">Home</a>
                   <a className="mr-3" href="#about">About</a>
+                  <a className="mr-3" href="#portfolio">Portfolio</a>
                   <a className="mr-3" href="#contact">Contact</a>
             </div>
             {/* center */}
