@@ -11317,6 +11317,14 @@ span .fa-plus {
 #about {
   display: inline-block;
 }
+.toolbelt img{
+  width: 64px;
+  height: auto;
+  margin: 10px 10px;
+}
+.pad-top-20 {
+  padding-top: 20px;
+}
 #spacer {
       height: 500px;
       width: auto;

@@ -16,6 +16,15 @@ import Palms from './styles/img/palms.jpg';
 
 // Buttons and Icons
 import { ReactComponent as ConnectButton} from './styles/icons/user-circle.svg';
+import cppIcon from './styles/icons/cppIcon.svg';
+import csharpIcon from './styles/icons/csharpIcon.svg';
+import html5Icon from './styles/icons/html5Icon.svg';
+import css3Icon from './styles/icons/css3Icon.svg';
+import jsIcon from './styles/icons/jsIcon.svg';
+import reactIcon from './styles/icons/reactIcon.svg';
+import nodejsIcon from './styles/icons/nodejsIcon.svg';
+import sqlIcon from './styles/icons/sqlIcon.svg';
+import javaIcon from './styles/icons/javaIcon.svg';
 
 // Styling
 import './App.css';
@@ -40,7 +49,7 @@ class App extends React.Component {
                     <h1>Adam Gemperline</h1>
                     <h5>Software Dev | Web Design</h5>
                     <a href="#gallery">
-                    <button type="button" className="cta">{"See More"}</button>
+                    <button type="button" className="cta">{"Coming Soon!"}</button>
                     </a>
                 </div>
                 </div>
@@ -113,7 +122,25 @@ class App extends React.Component {
               <div className="col-md-6 right-col">
               </div>
             </div>
-        </div> 
+            <div className="row pad-top-20">
+              <div className="container">
+                <h3>My Toolbelt:</h3>
+              </div>
+              <div className="container toolbelt">
+                  <img src={cppIcon} alt="C++" title="C++"/>
+                  <img src={csharpIcon} alt="C#" title="C#"/>
+                  <img src={html5Icon} alt="HTML5" title="HTML5"/>
+                  <img src={css3Icon} alt="HTML5" title="CSS3"/>
+                  <img src={jsIcon} alt="HTML5" title="JavaScript"/>
+                  <img src={reactIcon} alt="HTML5" title="React"/>
+                  <img src={nodejsIcon} alt="HTML5" title="Node.js"/>
+                  <img src={sqlIcon} alt="HTML5" title="SQL"/>
+                  <img src={javaIcon} alt="HTML5" title="Java"/>
+              </div>
+            </div>
+        </div>
+
+
         {/* Contact */}
         <div id="contact" className="container-fluid hero contact-background">
           <img src={Palms}/>
