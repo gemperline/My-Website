@@ -10723,6 +10723,7 @@ a#tab-1:hover {
   position: fixed;
   height: 4rem;
   bottom: -0.5rem;
+  cursor: pointer;
 }
 img#connectBtn:hover, img#connectBtn:active {
   position: fixed;
@@ -11214,7 +11215,7 @@ span .fa-plus {
   flex-direction: column; 
 }
 .hero h2 {
-  margin-top: 200px;
+  margin-top: 50px;
   margin-bottom: 50px;
   font-size: 40px;
   line-height: 40px; 
@@ -11228,6 +11229,38 @@ span .fa-plus {
 }
 .hero .landscape {
   color: white; 
+}
+
+#portfolio {
+  padding: 0px, 10px, 0px, 10px;
+  margin: 0; 
+}
+#portfolio .row {
+  margin-top: 50px;
+}
+#about, #portfolio {
+  padding-top:100px;
+}
+.col-md-3 {
+  height: inherit;
+  width: auto;
+  overflow: hidden;
+  padding: 10px 10px 10px 10px; 
+}
+
+.col-md-4 {
+  height: inherit;
+  width: auto;
+  overflow: hidden;
+  padding: 10px 10px 10px 10px; 
+}
+.work-sample-card h2{
+  text-align: left;
+}
+.col-md-4 img {
+  height: 100%;
+  max-width: 390px;
+  max-height: 380px; 
 }
 .contact p {
   font-size: 24px;
@@ -11266,7 +11299,16 @@ span .fa-plus {
 .contact-background {
   text-align: center;
 }
-
+.btn-Left{
+  text-align: left;
+  display: flex;
+  justify-content: left;
+}
+.col-md-6-right{
+  text-align: right;
+  display: flex;
+  justify-content: right;
+}
 .contact-background img {
    z-index: 0;
    padding: 0px;
@@ -11278,6 +11320,12 @@ span .fa-plus {
   margin-bottom: 20px;
   font-weight: bold;
   text-shadow: 0 0 15px #00d9ff, 0 0 15px #00d9ff;
+}
+.email:hover span {
+  display: none;
+}
+.email:hover:before {
+  content: "adamgemperline@gmail.com";
 }
 .container-fluid {
   position: inherit;

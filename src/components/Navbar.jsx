@@ -4,9 +4,6 @@ import React, { Component } from 'react';
 import { ReactComponent as CaretRight } from '../styles/icons/caret-right-white.svg';
 import { ReactComponent as MobileMenuIcon } from '../styles/icons/mobileMenu.svg';
 
-// Styling
-import '../styles/css/bootstrap.min.css';
-
 
 export function CustomNavBar() {
 
@@ -24,10 +21,10 @@ export function CustomNavBar() {
                 <li className="green"><a href="#">Resume</a></li>
                 <li className="yellow">
                 <label for="btn-1" className="show">Portfolio +</label>
-                <a href="#">Portfolio</a>
+                <a href="#portfolio">Portfolio</a>
                 <input type="checkbox" id="btn-1"/>
                 <ul className="yellow-top">
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#portfolio">Gallery</a></li>
                     <li><a href="https://github.com/gemperline" target="_blank">Adam's GitHub</a></li>
                     <li>
                     <label for="btn-3" className="show">Work Samples +</label>
