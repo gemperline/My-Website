@@ -10545,7 +10545,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     flex-flow: row nowrap;
     justify-content: flex-start;
     position: fixed;
-    opacity: 0.7;
+    opacity: 0.3;
     z-index: -2;
 }
 
@@ -10822,7 +10822,7 @@ a.nav2-link {
   max-width: 1500px;
   max-height: 200px;
   transform: translateX(-45%);
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
   border-width: 3px;
   border-style: solid;
   border-radius: 1rem;
@@ -10830,7 +10830,6 @@ a.nav2-link {
   padding: 0.25rem;
   overflow: hidden;
   transition: height var(--speed) ease;
-  opacity: 0.7;
   left: calc(50% - 25px);
 }
 
