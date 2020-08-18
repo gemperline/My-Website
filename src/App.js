@@ -149,7 +149,7 @@ class App extends React.Component {
             <p>I'm interested in learing about new opportunities from software 
               development to web design &ndash; let's chat!
             </p>
-            <a href="#" data-toggle="modal" data-target="#message-modal"><button type="button" className="cta">Contact</button></a>
+            <a href="#contact" data-toggle="modal" data-target="#message-modal"><button type="button" className="cta">Contact</button></a>
           </div>
         </div>
   
