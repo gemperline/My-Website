@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // Material-UI
 import { makeStyles } from '@material-ui/core/styles';
@@ -16,6 +16,7 @@ import DBTool from '../styles/img/socialApp/HomePage.JPG';
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    '&:hover': {boxShadow: '0 0 15px #00d9ff, 0 0 15px #00d9ff'},
   },
   media: {
     height: 190,
@@ -43,22 +44,17 @@ const useStyles = makeStyles({
   btnRight: {
     margin: 0
   },
-  hover: {
-    boxShadow: '0 0 15px #00d9ff, 0 0 15px #00d9ff',
-  }
 });
 
 export default function SocialAppCard() {
   const classes = useStyles();
-  const [open, setOpen] = useState(false);
 
   return (
-    <Card className={classes.root} onMouseEnter={classes.hover}>
+    <Card className={classes.root} onMouseEnter={() => useStyles}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
           image={DBTool}
-          onEnter={() => classes.hover}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h3" className={classes.text}>

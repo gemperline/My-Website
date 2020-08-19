@@ -16,6 +16,7 @@ import DBTool from '../styles/img/databaseTool/SimulatedMainForm.jpg';
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    '&:hover': {boxShadow: '0 0 15px #00d9ff, 0 0 15px #00d9ff'},
   },
   media: {
     height: 190,
@@ -25,6 +26,7 @@ const useStyles = makeStyles({
     borderStyle: 'solid',
     borderColor: '#000',
     borderWidth: 1,
+    
   },
   text: {
     textAlign: 'left',
@@ -49,7 +51,7 @@ export default function DBToolCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} onMouseEnter={() => useStyles}>
       <CardActionArea>
         <CardMedia
           className={classes.media}

@@ -5,7 +5,7 @@ import AG_Logo from '../styles/img/AG_logo.jpg';
 
 export function MyHeader() {
     return (
-        <header className="masthead text-white text-center">
+        <header className="masthead text-white text-center" id="home">
         <div className="overlay">
             <div className="container">
             <div id="intro" className="container-fluid hero">

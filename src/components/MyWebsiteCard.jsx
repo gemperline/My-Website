@@ -16,6 +16,7 @@ import DBTool from '../styles/img/myWebsite/landingPage.JPG';
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    '&:hover': {boxShadow: '0 0 15px #00d9ff, 0 0 15px #00d9ff'},
   },
   media: {
     height: 190,
@@ -49,7 +50,7 @@ export default function MyWebsiteCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} onMouseEnter={() => useStyles}>
       <CardActionArea>
         <CardMedia
           className={classes.media}

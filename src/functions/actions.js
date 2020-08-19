@@ -1,5 +1,4 @@
   /* eslint-env jquery */ 
-import React, { useState } from 'react';
 
 export function closeDDOnClick() {
     $(document).on("click", function(event){

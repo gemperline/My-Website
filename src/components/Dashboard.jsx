@@ -22,7 +22,10 @@ export function Dashboard() {
   
     function DashboardItem(props) {
       return (
-      <a href={props.url} target="_blank" className="dash-item dash-li-mg" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
+      <a href={props.url} 
+        className="dash-item dash-li-mg"
+        target="_blank" rel="noopener noreferrer"
+        onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
         <span className="dash-icon-button">{props.leftIcon}</span>
         { props.children }
       </a>

@@ -2,11 +2,9 @@
 import React, { useState } from 'react';
 
 /* eslint-env jquery */
-import { closeDDOnClick } from './functions/actions.js';
 import { closeDashOnClick } from './functions/actions.js';
 
 // React Components
-import { DropdownMenu } from './components/DropdownMenu.jsx';
 import { Dashboard } from './components/Dashboard.jsx';
 import { CustomNavBar }   from './components/Navbar.jsx';
 import { MyHeader } from './components/MyHeader.jsx';
@@ -34,7 +32,7 @@ class App extends React.Component {
         <Spacer/>
         <About/>
 
-    <div id="portfolio" class="container-fluid hero white-trans">
+    <div id="portfolio" className="container-fluid hero white-trans">
       <h2>Work Samples</h2>
       <div className="row">
         <div className="x-margin-25">
@@ -57,7 +55,7 @@ class App extends React.Component {
 
         {/* Contact */}
         <div id="contact" className="container-fluid hero contact-background">
-          <img src={Palms}/>
+          <img src={Palms} alt="AG"/>
           <div className="hero contact-content">
             <h2>Contact Me</h2>
             <p>I'm interested in learing about new opportunities from software 
@@ -74,10 +72,11 @@ class App extends React.Component {
           <div className="row align-items-center">
             {/* left  */}
             <div className="col-lg-4 text-lg-left">
-                  <a className="mr-3 ml-3" href="#">Home</a>
+                  <a className="mr-3 ml-3" href="#!">Home</a>
                   <a className="mr-3" href="#about">About</a>
                   <a className="mr-3" href="#portfolio">Portfolio</a>
                   <a className="mr-3" href="#contact">Contact</a>
+                  <a className="mr-3" href="#!">Blog</a>
             </div>
             {/* center */}
             <div id="midFooter" className="col-lg-4 my-3 my-lg-0">
@@ -91,7 +90,7 @@ class App extends React.Component {
             </div>
             {/* right  */}
             <div className="col-lg-4 text-lg-right pad-right-10">
-              <div class="copyright">
+              <div className="copyright">
                 <span>© Adam Gemperline</span>
               </div>
             </div>
@@ -103,10 +102,6 @@ class App extends React.Component {
   
 }
 
-
-
-
-
 // generate a navbar
 function ReactNavbar(props) {
   return (
@@ -117,17 +112,17 @@ function ReactNavbar(props) {
 }
 
 // generate a link item for navbar
-function NavLink(props) {
-  const [open, setOpen] = useState(false);
-  return (
-    <li className="nav-item float-left">
-      <a href="#!" className="nav-link" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)} onClick={() => setOpen(false), closeDDOnClick()}>
-        {props.icon}
-      </a>
-      {open && props.children}
-    </li>
-  );
-}
+// function NavLink(props) {
+//   const [open, setOpen] = useState(false);
+//   return (
+//     <li className="nav-item float-left">
+//       <a href="#!" className="nav-link" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)} onClick={() => setOpen(false), closeDDOnClick()}>
+//         {props.icon}
+//       </a>
+//       {open && props.children}
+//     </li>
+//   );
+// }
 
 // generate an icon item for navbar
 function NavIcon(props) {
