@@ -11254,6 +11254,9 @@ span .fa-plus {
   overflow: hidden;
   padding: 10px 10px 10px 10px; 
 }
+.x-margin-25 {
+  margin: 0 25px;
+}
 .work-sample-card h2{
   text-align: left;
 }

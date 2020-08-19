@@ -13,6 +13,9 @@ import { MyHeader } from './components/MyHeader.jsx';
 import { About } from './components/About.jsx';
 import { Spacer } from './components/Spacer.jsx';
 import  DBToolCard  from './components/DBToolCard.jsx';
+import  SocialAppCard  from './components/SocialAppCard.jsx';
+import  MyWebsiteCard  from './components/MyWebsiteCard.jsx';
+import  LandingPageCard  from './components/LandingPageCard.jsx';
 
 // Images
 import Palms from './styles/img/palms.jpg';
@@ -34,7 +37,20 @@ class App extends React.Component {
     <div id="portfolio" class="container-fluid hero white-trans">
       <h2>Work Samples</h2>
       <div className="row">
-        <DBToolCard/>
+        <div className="x-margin-25">
+          <DBToolCard/>
+        </div>
+        <div className="x-margin-25">
+          <SocialAppCard/>
+        </div>
+        <div className="x-margin-25">
+          <MyWebsiteCard/>
+        </div>
+      </div>
+      <div className="row">
+      <div className="x-margin-25">
+          <LandingPageCard/>
+        </div>
       </div>
       <Spacer/>
     </div>

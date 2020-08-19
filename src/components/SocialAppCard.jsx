@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Material-UI
 import { makeStyles } from '@material-ui/core/styles';
@@ -11,7 +11,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 // Images
-import DBTool from '../styles/img/databaseTool/SimulatedMainForm.jpg';
+import DBTool from '../styles/img/socialApp/HomePage.JPG';
 
 const useStyles = makeStyles({
   root: {
@@ -42,25 +42,30 @@ const useStyles = makeStyles({
   },
   btnRight: {
     margin: 0
+  },
+  hover: {
+    boxShadow: '0 0 15px #00d9ff, 0 0 15px #00d9ff',
   }
 });
 
-export default function DBToolCard() {
+export default function SocialAppCard() {
   const classes = useStyles();
+  const [open, setOpen] = useState(false);
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} onMouseEnter={classes.hover}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
           image={DBTool}
+          onEnter={() => classes.hover}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h3" className={classes.text}>
-            Database Tool
+            Social Web App
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p" className={classes.p}>
-            A C#/.NET desktop application for managing, testing, and executing SQL and T-SQL database scripts - efficiently.
+            A React social web application, similar to Twitter, that allows users to connect with one another and share their thoughts.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -71,7 +76,7 @@ export default function DBToolCard() {
             </Button>
         </div>
         <div className="col-md-6">
-            <Button color="primary" href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
+            <Button color="primary" href="https://github.com/gemperline/Twitter-esque-Social-App" target="_blank">
                 Repository
             </Button>
         </div>

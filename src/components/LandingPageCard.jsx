@@ -11,7 +11,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 // Images
-import DBTool from '../styles/img/databaseTool/SimulatedMainForm.jpg';
+import LandingPage from '../styles/img/landingPage/landingPage.JPG';
 
 const useStyles = makeStyles({
   root: {
@@ -45,7 +45,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function DBToolCard() {
+export default function LandingPageCard() {
   const classes = useStyles();
 
   return (
@@ -53,14 +53,17 @@ export default function DBToolCard() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={DBTool}
+          image={LandingPage}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h3" className={classes.text}>
-            Database Tool
+            Landing Page Imitation
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p" className={classes.p}>
-            A C#/.NET desktop application for managing, testing, and executing SQL and T-SQL database scripts - efficiently.
+          <Typography variant="body2" color="textSecondary" component="p" className={classes.p}> 
+            This project was intended to test the ability to replicate a landing page of a popular search engine.
+            A responsive menu and dashboard were added along with self-designed graphics, icons, and buttons. 
+            <br/>
+            *Disclaimer*: This project served solely for the purpose of learning and is not in production.
           </Typography>
         </CardContent>
       </CardActionArea>

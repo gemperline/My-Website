@@ -11,7 +11,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 // Images
-import DBTool from '../styles/img/databaseTool/SimulatedMainForm.jpg';
+import DBTool from '../styles/img/myWebsite/landingPage.JPG';
 
 const useStyles = makeStyles({
   root: {
@@ -45,7 +45,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function DBToolCard() {
+export default function MyWebsiteCard() {
   const classes = useStyles();
 
   return (
@@ -57,10 +57,10 @@ export default function DBToolCard() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h3" className={classes.text}>
-            Database Tool
+            This Website
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p" className={classes.p}>
-            A C#/.NET desktop application for managing, testing, and executing SQL and T-SQL database scripts - efficiently.
+            Look familiar? Originally a static HTML site, this website was rebuilt with React and JavaScript to offer a more-responsive design.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -71,7 +71,7 @@ export default function DBToolCard() {
             </Button>
         </div>
         <div className="col-md-6">
-            <Button color="primary" href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
+            <Button color="primary" href="https://github.com/gemperline/My-Website" target="_blank">
                 Repository
             </Button>
         </div>
