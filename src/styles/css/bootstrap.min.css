@@ -10544,7 +10544,6 @@ section#contact form#contactForm :-ms-input-placeholder {
     flex-flow: row nowrap;
     justify-content: flex-start;
     position: fixed;
-    opacity: 0.3;
     z-index: -2;
     width: 100%;
     height: auto;
