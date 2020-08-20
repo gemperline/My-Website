@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Images
-import AG_Logo from '../styles/img/AG_logo.jpg';
+import AG_Logo from '../styles/img/AG_logo.png';
 
 export function MyHeader() {
     return (

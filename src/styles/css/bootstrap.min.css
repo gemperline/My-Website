@@ -10539,11 +10539,17 @@ section#contact form#contactForm :-ms-input-placeholder {
     flex-flow: row nowrap;
     justify-content: flex-start;
     position: fixed;
-    opacity: 0.3;
+    opacity: 0;
     z-index: -2;
     width: 100%;
     height: auto;
     /* aspect-ratio: attr(width) / attr(height); */
+    animation: 3s ease 1s normal forwards ag-logo-opacity;
+}
+@keyframes ag-logo-opacity {
+  0%   {opacity: 0}
+  50%  {opacity: 1}
+  100% {opacity: 0.3}
 }
 
 body, td, a, p, .h {
@@ -11231,7 +11237,6 @@ span .fa-plus {
 .hero .landscape {
   color: white; 
 }
-
 #portfolio {
   padding: 0px, 10px, 0px, 10px;
   margin: 0; 
@@ -11286,6 +11291,12 @@ span .fa-plus {
   flex-wrap: row nowrap;
   justify-content: flex-start;
   margin: auto;
+  opacity: 0;
+  animation: 2s ease 3s normal forwards intro-content-opacity;
+}
+@keyframes intro-content-opacity {
+  0%   {opacity: 0}
+  100% {opacity: 1}
 }
 .contact-content {
   position: absolute;

@@ -29,7 +29,7 @@ class App extends React.Component {
       <div className="App">
         <CustomNavBar/>
         <MyHeader/>
-        {/* <Spacer/> */}
+        <Spacer/>
         <About/>
 
     <div id="portfolio" className="container-fluid hero white-trans">
@@ -54,7 +54,7 @@ class App extends React.Component {
     </div>
 
         {/* Contact */}
-        <div id="contact" className="container-fluid hero contact-background">
+        <div id="contact" className="container-fluid hero ">
           <img src={Palms} alt="AG"/>
           <div className="hero contact-content">
             <h2>Contact Me</h2>

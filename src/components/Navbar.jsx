@@ -27,12 +27,12 @@ export function CustomNavBar() {
                             <li><a href="https://github.com/gemperline" target="_blank" rel="noopener noreferrer">Adam's GitHub</a></li>
                             <li className="">
                             <label htmlFor="btn-3" className="show">Work Samples +</label>
-                            <a href="#!" id="hidden-submenu" className="">Work Samples <CaretRight id="caret" alt=">"/></a>
+                            <a href="#portfolio" id="hidden-submenu" className="">Work Samples <CaretRight id="caret" alt=">"/></a>
                             <input type="checkbox" id="btn-3"/>
                             <ul>
-                                <li><a href="#!">Database Tool</a></li>
-                                <li><a href="#!">Social Web App</a></li>
-                                <li><a href="#!">Mobile</a></li>
+                                <li><a href="#portfolio">Database Tool</a></li>
+                                <li><a href="#portfolio">Social Web App</a></li>
+                                <li><a href="#portfolio">Mobile</a></li>
                         </ul>
                     </li>
                 </ul>
