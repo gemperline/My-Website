@@ -49,12 +49,12 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  height: 100%;
+  height: 100vh;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -11318,7 +11318,7 @@ span .fa-plus {
    z-index: 0;
    padding: 0px;
    align-items: center;
-   max-height: 950px;
+   height: auto;
    width: 100%;
 }
 .email {
@@ -11333,7 +11333,7 @@ span .fa-plus {
   content: "adamgemperline@gmail.com";
 }
 .container-fluid {
-  position: inherit;
+  position: relative;
   width: 100%;
   height: auto;
   text-align:center;
@@ -11341,6 +11341,13 @@ span .fa-plus {
 }
 #intro {
   background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+#intro img {
+  max-width: 40%;
+  bottom: calc(50%);
+  opacity: 30%;
 }
 #intro h1, #intro h5 {
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
