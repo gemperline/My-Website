@@ -10539,6 +10539,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     flex-flow: row nowrap;
     justify-content: flex-start;
     position: fixed;
+    opacity: 0.3;
     z-index: -2;
     width: 100%;
     height: auto;
@@ -11344,7 +11345,6 @@ span .fa-plus {
 }
 #intro img {
   max-width: 40%;
-  opacity: 0.3;
 }
 #intro h1, #intro h5 {
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);

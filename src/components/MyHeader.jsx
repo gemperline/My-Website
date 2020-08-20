@@ -6,7 +6,7 @@ import AG_Logo from '../styles/img/AG_logo.jpg';
 export function MyHeader() {
     return (
         <div id="intro" className="container-fluid hero">
-            <img src={AG_Logo} alt="AG"/>
+            <img src={AG_Logo} className="ag-logo"alt="AG"/>
             <div className="container">
                 <div className="hero intro-content col-9">
                     <h1>Adam Gemperline</h1>
