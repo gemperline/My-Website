@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Buttons and Icons
+// Icons
 import { ReactComponent as CaretRight } from '../styles/icons/caret-right-white.svg';
 import { ReactComponent as MobileMenuIcon } from '../styles/icons/mobileMenu.svg';
 
@@ -16,7 +16,7 @@ export function CustomNavBar() {
             </label>
             <input type="checkbox" id="btn"></input>
             <ul>
-                <li className="violet"><a href="#home">Home</a></li>
+                <li className="violet"><a href="#intro">Home</a></li>
                 <li className="blue"><a href="#about">About</a></li>
                 <li className="green">
                 <label htmlFor="btn-1" className="show">Portfolio +</label>

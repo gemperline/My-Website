@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 // Buttons and Icons
-
+import { ReactComponent as TwitterIcon } from '../styles/icons/twitter.svg';
 import { ReactComponent as FacebookIcon } from '../styles/icons/facebookIcon.svg';
 import { ReactComponent as InstagramIcon } from '../styles/icons/instagram2.svg';
-import { ReactComponent as LinkedinIcon } from '../styles/icons/linkedin.svg';
+import { ReactComponent as LinkedInIcon } from '../styles/icons/linkedin.svg';
 import { ReactComponent as GitHubIcon } from '../styles/icons/githubIcon.svg';
-import { ReactComponent as TwitterIcon } from '../styles/icons/twitter.svg';
+
 
 // Transition theme
 import { CSSTransition } from 'react-transition-group';
@@ -40,7 +40,7 @@ export function Dashboard() {
             </DashboardItem>
   
             <DashboardItem 
-              leftIcon={<LinkedinIcon/>} url="https://www.linkedin.com/in/gemperline">
+              leftIcon={<LinkedInIcon/>} url="https://www.linkedin.com/in/gemperline">
             </DashboardItem>
                
             <DashboardItem 

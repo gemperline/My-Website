@@ -4,16 +4,16 @@ import React from 'react';
 import { Spacer } from '../components/Spacer.jsx';
 
 // Buttons and Icons
-import cppIcon from '../styles/icons/cppIcon.svg';
-import csharpIcon from '../styles/icons/csharpIcon.svg';
-import html5Icon from '../styles/icons/html5Icon.svg';
-import css3Icon from '../styles/icons/css3Icon.svg';
-import jsIcon from '../styles/icons/jsIcon.svg';
-import reactIcon from '../styles/icons/reactIcon.svg';
-import nodejsIcon from '../styles/icons/nodejsIcon.svg';
-import sqlIcon from '../styles/icons/sqlIcon.svg';
-import javaIcon from '../styles/icons/javaIcon.svg';
-import jQueryIcon from '../styles/icons/jQueryIcon.svg';
+import cppIcon from '../styles/icons/cppIcon.png';
+import csharpIcon from '../styles/icons/csharpIcon.png';
+import html5Icon from '../styles/icons/html5Icon.png';
+import css3Icon from '../styles/icons/css3Icon.png';
+import jsIcon from '../styles/icons/jsIcon.png';
+import reactIcon from '../styles/icons/reactIcon.png';
+import nodejsIcon from '../styles/icons/nodejsIcon.png';
+import sqlIcon from '../styles/icons/sqlIcon.png';
+import javaIcon from '../styles/icons/javaIcon.png';
+import jQueryIcon from '../styles/icons/jQueryIcon.png';
 
 
 export function About() {
@@ -29,7 +29,7 @@ export function About() {
             </div>
           </div>
             
-        <div className="row pad-top-20">
+        <div className="row pad-top-40">
             <div className="container">
                 <h3>My Toolbelt:</h3>
             </div>
@@ -46,7 +46,6 @@ export function About() {
                 <img src={sqlIcon} alt="SQL" title="SQL"/>
             </div>
             </div>
-            <Spacer/>
         </div>
     );
 };
