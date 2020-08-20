@@ -11345,7 +11345,6 @@ span .fa-plus {
 }
 #intro img {
   max-width: 40%;
-  bottom: calc(50%);
   opacity: 30%;
 }
 #intro h1, #intro h5 {
