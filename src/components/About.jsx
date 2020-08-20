@@ -13,6 +13,7 @@ import reactIcon from '../styles/icons/reactIcon.svg';
 import nodejsIcon from '../styles/icons/nodejsIcon.svg';
 import sqlIcon from '../styles/icons/sqlIcon.svg';
 import javaIcon from '../styles/icons/javaIcon.svg';
+import jQueryIcon from '../styles/icons/jQueryIcon.svg';
 
 
 export function About() {
@@ -35,13 +36,14 @@ export function About() {
             <div className="container toolbelt">
                 <img src={cppIcon} alt="C++" title="C++"/>
                 <img src={csharpIcon} alt="C#" title="C#"/>
+                <img src={javaIcon} alt="Java" title="Java"/>
                 <img src={html5Icon} alt="HTML5" title="HTML5"/>
-                <img src={css3Icon} alt="HTML5" title="CSS3"/>
-                <img src={jsIcon} alt="HTML5" title="JavaScript"/>
-                <img src={reactIcon} alt="HTML5" title="React"/>
-                <img src={nodejsIcon} alt="HTML5" title="Node.js"/>
-                <img src={sqlIcon} alt="HTML5" title="SQL"/>
-                <img src={javaIcon} alt="HTML5" title="Java"/>
+                <img src={css3Icon} alt="CSS3" title="CSS3"/>
+                <img src={jsIcon} alt="JavaScript" title="JavaScript"/>
+                <img src={reactIcon} alt="React" title="React"/>
+                <img src={nodejsIcon} alt="Node.js" title="Node.js"/>
+                <img src={jQueryIcon} alt="jQuery" title="jQuery"/>
+                <img src={sqlIcon} alt="SQL" title="SQL"/>
             </div>
             </div>
             <Spacer/>
