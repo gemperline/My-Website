@@ -11038,7 +11038,11 @@ svg#connectBtn {
   padding-left: 0;
   line-height: 30px;
 }
-
+.last-li {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-style: solid;
+}
 .nav3 nav ul ul li a:hover {
   color: #fff;
   box-shadow: none;
