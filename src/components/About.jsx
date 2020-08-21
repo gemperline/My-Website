@@ -30,7 +30,7 @@ export function About() {
           </div>
           <div className="row">
             <div className="col-md x-mg-100 ez-read">
-              <h3 className="my-gradient">So far, I consider myself to be a bit of a software development generalist. Most of my formal education involved applying back-end programming concepts and OOP and OOA/D techniques. However, the "Creator" in me quickly became interested in designing aesthetically-beautiful things, so I began learning front-end development. I've worked professionally with server-side and end-user langauges and tools, and I'm eager to continue tinkering my way to becoming a master.</h3>
+              <h3 className="my-gradient">So far, I consider myself to be a bit of a software development generalist. Most of my formal education involved applying back-end programming techniques to OOP and OOA/D concepts. However, the "Creator" in me quickly became interested in designing aesthetically-beautiful things, so I began learning front-end development. I've worked professionally with server-side and end-user langauges and tools, and I'm eager to continue tinkering my way to becoming a master.</h3>
             </div>
           </div>
             
