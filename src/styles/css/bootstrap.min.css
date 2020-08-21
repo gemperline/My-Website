@@ -55,11 +55,15 @@ html, body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   height: 100vh;
-}
 
+}
+html {
+  scroll-behavior: smooth;
+}
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
+
 
 body {
   margin: 0;
@@ -167,8 +171,7 @@ a {
   background-color: transparent;
 }
 a:hover {
-  color: #000000;
-  text-decoration: underline;
+
 }
 
 a#menuBtn:hover {
@@ -11211,6 +11214,14 @@ span .fa-plus {
     z-index:2;
     }
   }
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
 .hero {
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -11227,6 +11238,7 @@ span .fa-plus {
   font-size: 40px;
   line-height: 40px; 
   font-weight: bold;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 .hero h1 {
   line-height: 55px;
@@ -11395,8 +11407,8 @@ span .fa-plus {
   height: auto;
   margin: 30px 10px;
 }
-.pad-top-40 {
-  padding-top: 40px;
+.pad-top-100 {
+  padding-top: 100px;
 }
 #spacer {
       height: 500px;
@@ -11404,7 +11416,6 @@ span .fa-plus {
   }
 
 .left-col {
-  color: #7701a5;
   padding: 20px;
   text-align: right;
   text-transform: uppercase;
@@ -11437,4 +11448,37 @@ span .fa-plus {
 
 .col-md-6 {
   width: 100%;
+}
+.my-gradient:hover {
+  background: linear-gradient(0deg,#00eeff,#a002fc);
+    background-clip: border-box;
+-webkit-background-clip: text;
+    background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-box-decoration-break: clone;
+box-decoration-break: clone;
+text-shadow: none;
+}
+.ez-read {
+  border-width: 0px;
+  border-radius: 30px;
+  animation: 1s ease-in-out 0s normal forwards about-bg-opacity-out;
+}
+.ez-read:hover {
+  border-color: '#fff';
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 30px;
+  animation: 1s ease-in-out 0s normal forwards about-bg-opacity-in;
+}
+@keyframes about-bg-opacity-in {
+  0% {background-color: rgba(255, 255, 255, 0);}
+  100% {background-color: rgba(255, 255, 255, 1);}
+}
+@keyframes about-bg-opacity-out {
+  0% {background-color: rgba(255, 255, 255, 1);}
+  100% {background-color: rgba(255, 255, 255, 0);}
+}
+.x-mg-100 {
+  margin: 0 100px;
 }
