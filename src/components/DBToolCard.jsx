@@ -10,7 +10,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 // Components 
-import TransitionsModal from './modals/DBToolModal.jsx';
+import DBToolModal from './modals/DBToolModal.jsx';
 // Images
 import DBTool from '../styles/img/databaseTool/SimulatedMainForm.jpg';
 
@@ -43,15 +43,6 @@ const useStyles = makeStyles({
     paddingBottom: 16,
     color: '#000'
   },
-  btnLeft: {
-      textAlign: 'left',
-      display: 'flex',
-  },
-  btn: {
-    margin: 0,
-    color: '#8700c5',
-    maxWidth: '100px',
-  }
 });
 
 export default function DBToolCard() {
@@ -66,7 +57,7 @@ export default function DBToolCard() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h3" className={classes.text}>
-            Database Tool
+            Script Manager
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p" className={classes.p}>
             A C#/.NET desktop application for managing, testing, and executing SQL and T-SQL database scripts - efficiently.
@@ -75,12 +66,12 @@ export default function DBToolCard() {
       </CardActionArea>
       <CardActions>
         <div className="col-md-6">
-          <TransitionsModal className={classes.btn}>
+          <DBToolModal>
             Learn More
-          </TransitionsModal>
+          </DBToolModal>
         </div>
         <div className="col-md-6">
-            <Button className={classes.btn, "gradient-btn gradient-btn-1"} href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
+            <Button className="gradient-btn gradient-btn-1" href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
                 Repository
             </Button>
         </div>

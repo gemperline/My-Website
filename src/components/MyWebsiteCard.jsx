@@ -10,7 +10,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 // Components 
-import TransitionsModal from './modals/DBToolModal.jsx';
+import MyWebsiteModal from './modals/MyWebsiteModal.jsx';
 // Images
 import DBTool from '../styles/img/myWebsite/landingPage.JPG';
 
@@ -70,9 +70,9 @@ export default function MyWebsiteCard() {
       </CardActionArea>
       <CardActions>
         <div className="col-md-6">
-        <TransitionsModal className={classes.btn}>
+        <MyWebsiteModal className={classes.btn}>
             Learn More
-          </TransitionsModal>
+          </MyWebsiteModal>
         </div>
         <div className="col-md-6">
             <Button className={classes.btn, "gradient-btn gradient-btn-1"} href="https://github.com/gemperline/My-Website" target="_blank">

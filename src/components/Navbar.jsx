@@ -32,7 +32,8 @@ export function CustomNavBar() {
                             <ul>
                                 <li><a href="#portfolio">Database Tool</a></li>
                                 <li><a href="#portfolio">Social Web App</a></li>
-                                <li><a href="#portfolio">Mobile</a></li>
+                                <li><a href="#portfolio">This Website</a></li>
+                                <li><a href="#portfolio">Landing Page</a></li>
                         </ul>
                     </li>
                 </ul>
