@@ -17,7 +17,7 @@ export function About() {
     return (
         <div id="about" className="container-fluid hero white-trans">
           <h2 className="header-txt">About</h2>
-          <div className="row">
+          <div className="row pad-x-20">
             <div className="col-md-6 left-col ez-read">
               <h3 className="my-gradient"> I'm a forward-thinking, innovative techie who likes to create technology that strengthens social interaction and promotes human development.</h3>
             </div>

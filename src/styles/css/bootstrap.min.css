@@ -11245,7 +11245,6 @@ span .fa-plus {
 .hero {
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  height: inherit;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -11430,6 +11429,10 @@ span .fa-plus {
 .pad-top-100 {
   padding-top: 100px;
 }
+.pad-x-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 #spacer {
   height: 500px;
   width: auto;
@@ -11491,7 +11494,7 @@ box-decoration-break: clone;
 text-shadow: none;
 color: '#000';
 }
-.gradient-btn1 {
+/* .gradient-btn1 {
   background: linear-gradient(0deg,#00eeff,#a002fc);
     background-clip: border-box;
 -webkit-background-clip: text;
@@ -11500,8 +11503,7 @@ color: '#000';
 -webkit-box-decoration-break: clone;
 box-decoration-break: clone;
 text-shadow: none;
-color: '#000';
-}
+} */
 .gradient-btn {
   text-align: center;
   text-transform: uppercase;

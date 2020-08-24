@@ -80,7 +80,7 @@ export default function SocialWebAppModal() {
         <Fade in={open}>
           <div className={classes.paper}>
             <div className="row justify-content-center">
-                <h2 id="transition-modal-title" className={classes.h1, "gradient-txt"}>Social Web Application</h2>
+                <h2 id="transition-modal-title" className={classes.h1 && "gradient-txt"}>Social Web Application</h2>
             </div>
             <div className="row justify-content-center">
                 <Button className={classes.btn && "in-modal-btn"} onClick={handleOpen} href="https://github.com/gemperline/Twitter-esque-Social-App" target="_blank">

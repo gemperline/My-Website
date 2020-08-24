@@ -44,7 +44,11 @@ const useStyles = makeStyles((theme) => ({
   image: {
     width: '100%',
     padding: '40px',
-  }
+  },
+  btn: {
+    color: '#fff',
+    '&hover': {color: '#fff'},
+  },
 }));
 
 export default function LandingPageModal() {

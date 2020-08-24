@@ -40,13 +40,9 @@ const useStyles = makeStyles({
     paddingBottom: 16,
     color: '#000'
   },
-  btnLeft: {
-      textAlign: 'left',
-      display: 'flex',
+  btn: {
+    borderRadius: '30px',
   },
-  btnRight: {
-    margin: 0
-  }
 });
 
 export default function MyWebsiteCard() {
@@ -75,7 +71,7 @@ export default function MyWebsiteCard() {
           </MyWebsiteModal>
         </div>
         <div className="col-md-6">
-            <Button className={classes.btn, "gradient-btn gradient-btn-1"} href="https://github.com/gemperline/My-Website" target="_blank">
+            <Button className="gradient-btn gradient-btn-1" href="https://github.com/gemperline/My-Website" target="_blank">
                 Repository
             </Button>
         </div>

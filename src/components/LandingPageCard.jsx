@@ -40,13 +40,10 @@ const useStyles = makeStyles({
     paddingBottom: 16,
     color: '#000'
   },
-  btnLeft: {
-      textAlign: 'left',
-      display: 'flex',
+  btn: {
+    color: '#fff',
+    '&hover': {color: '#fff'},
   },
-  btnRight: {
-    margin: 0
-  }
 });
 
 export default function LandingPageCard() {
@@ -72,13 +69,13 @@ export default function LandingPageCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <div className="col-md-6">
-        <LandingPageModal className={classes.btn}>
+        <div className={classes.btn && "col-md-6"}>
+        <LandingPageModal type="button" className={classes.btn}>
             Learn More
           </LandingPageModal>
         </div>
         <div className="col-md-6">
-            <Button className={classes.btn, "gradient-btn gradient-btn-1"} href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
+            <Button type="button" className={classes.btn && "gradient-btn gradient-btn-1"} href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
                 Repository
             </Button>
         </div>

@@ -46,7 +46,7 @@ class App extends React.Component {
     </div>
 
         {/* Contact */}
-        <div id="contact" className="container-fluid hero ">
+        <div id="contact" className="container-fluid hero">
           <img src={Palms} alt="AG"/>
           <div className="hero contact-content">
             <h2>Contact Me</h2>
