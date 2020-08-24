@@ -9,14 +9,20 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+// Components 
+import DBToolModal from './modals/DBToolModal.jsx';
 // Images
 import DBTool from '../styles/img/databaseTool/SimulatedMainForm.jpg';
+
+
 
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
-    '&:hover': {boxShadow: '0 0 15px #00d9ff, 0 0 15px #00d9ff'},
+    // boxShadow: '0 1px 5px #000, 0 0px 0px #000',
+    '&:hover': {
+      boxShadow: '0 0 15px #00d9ff, 0 0 15px #00d9ff'
+    },
   },
   media: {
     height: 190,
@@ -25,8 +31,7 @@ const useStyles = makeStyles({
     borderTopRightRadius: 3,
     borderStyle: 'solid',
     borderColor: '#000',
-    borderWidth: 1,
-    
+    borderWidth: 1,  
   },
   text: {
     textAlign: 'left',
@@ -38,13 +43,6 @@ const useStyles = makeStyles({
     paddingBottom: 16,
     color: '#000'
   },
-  btnLeft: {
-      textAlign: 'left',
-      display: 'flex',
-  },
-  btnRight: {
-    margin: 0
-  }
 });
 
 export default function DBToolCard() {
@@ -59,7 +57,7 @@ export default function DBToolCard() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h3" className={classes.text}>
-            Database Tool
+            Script Manager
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p" className={classes.p}>
             A C#/.NET desktop application for managing, testing, and executing SQL and T-SQL database scripts - efficiently.
@@ -68,12 +66,12 @@ export default function DBToolCard() {
       </CardActionArea>
       <CardActions>
         <div className="col-md-6">
-            <Button color="primary">
-                Learn More
-            </Button>
+          <DBToolModal>
+            Learn More
+          </DBToolModal>
         </div>
         <div className="col-md-6">
-            <Button color="primary" href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
+            <Button className="gradient-btn gradient-btn-1" href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
                 Repository
             </Button>
         </div>

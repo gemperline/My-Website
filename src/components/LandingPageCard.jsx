@@ -9,9 +9,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+// Components 
+import LandingPageModal from './modals/LandingPageModal.jsx';
 // Images
 import LandingPage from '../styles/img/landingPage/landingPage.JPG';
+
+
 
 const useStyles = makeStyles({
   root: {
@@ -64,18 +67,18 @@ export default function LandingPageCard() {
             This project was intended to test the ability to replicate a landing page of a popular search engine.
             A responsive menu and dashboard were added along with self-designed graphics, icons, and buttons. 
             <br/>
-            *Disclaimer*: This project served solely for the purpose of learning and is not in production.
+            *Disclaimer*: This project is intended solely for the purpose of learning and is not deployed.
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <div className="col-md-6">
-            <Button color="primary">
-                Learn More
-            </Button>
+        <LandingPageModal className={classes.btn}>
+            Learn More
+          </LandingPageModal>
         </div>
         <div className="col-md-6">
-            <Button color="primary" href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
+            <Button className={classes.btn, "gradient-btn gradient-btn-1"} href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
                 Repository
             </Button>
         </div>

@@ -9,9 +9,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+// Components 
+import SocialWebAppModal from './modals/SocialAppModal.jsx';
 // Images
 import DBTool from '../styles/img/socialApp/HomePage.JPG';
+
+
 
 const useStyles = makeStyles({
   root: {
@@ -37,13 +40,6 @@ const useStyles = makeStyles({
     paddingBottom: 16,
     color: '#000'
   },
-  btnLeft: {
-      textAlign: 'left',
-      display: 'flex',
-  },
-  btnRight: {
-    margin: 0
-  },
 });
 
 export default function SocialAppCard() {
@@ -67,12 +63,12 @@ export default function SocialAppCard() {
       </CardActionArea>
       <CardActions>
         <div className="col-md-6">
-            <Button color="primary">
-                Learn More
-            </Button>
+          <SocialWebAppModal className={classes.btn}>
+            Learn More
+          </SocialWebAppModal>
         </div>
         <div className="col-md-6">
-            <Button color="primary" href="https://github.com/gemperline/Twitter-esque-Social-App" target="_blank">
+            <Button className="gradient-btn gradient-btn-1" href="https://github.com/gemperline/Twitter-esque-Social-App" target="_blank">
                 Repository
             </Button>
         </div>
