@@ -23,6 +23,7 @@ export function Dashboard() {
     function DashboardItem(props) {
       return (
       <a href={props.url} 
+        title={props.title}
         className="dash-item dash-li-mg"
         target="_blank" rel="noopener noreferrer"
         onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
@@ -36,23 +37,23 @@ export function Dashboard() {
         <CSSTransition in={activeMenu === 'main'} unmountOnExit timeout={500} classNames="[TODO]">
           <div className="dash-menu">
             <DashboardItem 
-              leftIcon={<GitHubIcon/>} url="https://github.com/gemperline">
+              leftIcon={<GitHubIcon/>} url="https://github.com/gemperline" title="GitHub">
             </DashboardItem>
   
             <DashboardItem 
-              leftIcon={<LinkedInIcon/>} url="https://www.linkedin.com/in/gemperline">
+              leftIcon={<LinkedInIcon/>} url="https://www.linkedin.com/in/gemperline" title="LinkedIn">
             </DashboardItem>
                
             <DashboardItem 
-              leftIcon={<InstagramIcon/>} url="https://www.instagram.com/infinite_adam">     
+              leftIcon={<InstagramIcon/>} url="https://www.instagram.com/infinite_adam" title="Instagram">     
             </DashboardItem>
          
             <DashboardItem 
-              leftIcon={<TwitterIcon/>} url="https://twitter.com/Adam43169080">
+              leftIcon={<TwitterIcon/>} url="https://twitter.com/Adam43169080" title="Twitter">
             </DashboardItem>
   
             <DashboardItem 
-              leftIcon={<FacebookIcon/>} url="https://facebook.com">
+              leftIcon={<FacebookIcon/>} url="https://facebook.com" title="Facebook">
             </DashboardItem>
           </div>
         </CSSTransition>

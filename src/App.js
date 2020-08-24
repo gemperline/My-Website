@@ -1,26 +1,19 @@
 // TODO: uninstall material-ui, react-hover
 import React, { useState } from 'react';
 
-/* eslint-env jquery */
-import { closeDashOnClick } from './functions/actions.js';
-
 // React Components
-import { Dashboard } from './components/Dashboard.jsx';
 import { CustomNavBar }   from './components/Navbar.jsx';
 import { MyHeader } from './components/MyHeader.jsx';
 import { About } from './components/About.jsx';
-import { Spacer } from './components/Spacer.jsx';
 import  DBToolCard  from './components/DBToolCard.jsx';
 import  SocialAppCard  from './components/SocialAppCard.jsx';
 import  MyWebsiteCard  from './components/MyWebsiteCard.jsx';
 import  LandingPageCard  from './components/LandingPageCard.jsx';
+import  SwipeableTemporaryDrawer  from './components/SocialDrawer.jsx';
+import { Spacer } from './components/Spacer.jsx';
 
 // Images
 import Palms from './styles/img/palms.jpg';
-
-
-// Buttons and Icons
-import { ReactComponent as ConnectButton} from './styles/icons/user-circle.svg';
 
 class App extends React.Component {
   render() {
@@ -29,7 +22,6 @@ class App extends React.Component {
       <div className="App">
         <CustomNavBar/>
         <MyHeader/>
-        <Spacer/>
         <About/>
 
     <div id="portfolio" className="container-fluid hero white-trans">
@@ -68,34 +60,31 @@ class App extends React.Component {
   
         
         {/* Footer items */}
-        <footer className="footer py-4">
+        <footer id="footer" className="footer py-10">
           <div className="row align-items-center">
             {/* left  */}
-            <div className="col-lg-4 text-lg-left">
-                  <a className="mr-3 ml-3" href="#!">Home</a>
+            <div id="leftFoot" className="col-lg-4 text-lg-left underline">
+                  <a className="mr-3 ml-3" href="#intro">Home</a>
                   <a className="mr-3" href="#about">About</a>
                   <a className="mr-3" href="#portfolio">Portfolio</a>
                   <a className="mr-3" href="#contact">Contact</a>
                   <a className="mr-3" href="#!">Blog</a>
             </div>
             {/* center */}
-            <div id="midFooter" className="col-lg-4 my-3 my-lg-0">
-                {
-                  <ReactNavbar>
-                    <NavIcon icon={<ConnectButton id="connectBtn"/>}>
-                      <Dashboard/>
-                    </NavIcon>
-                </ReactNavbar>
-                }     
+            <div id="midFoot" className="col-lg-4">
+              <ReactNavbar>
+                <NavIcon title="Connect With Me" icon={<SwipeableTemporaryDrawer id="connectBtn"/>}/>
+              </ReactNavbar>                 
             </div>
-            {/* right  */}
-            <div className="col-lg-4 text-lg-right pad-right-10">
+            {/* right */}
+            <div id="rightFoot" className="col-lg-4 text-lg-right pad-right-10">
               <div className="copyright">
                 <span>© Adam Gemperline</span>
               </div>
             </div>
           </div>
         </footer>
+        <div className="footer-bar"/>
     </div>
     );
   }
@@ -129,7 +118,7 @@ function NavIcon(props) {
   const [open, setOpen] = useState(false);
   return (
     <li className="nav2-icon">
-      <a href={props.target} className="icon-button" onMouseEnter={() => setOpen(!open)} onClick={() => setOpen(!open), closeDashOnClick()}>
+      <a href={props.target} className="icon-button" title={props.title} onClick={() => setOpen(!open)}>
         {props.icon}
       </a>
       {open && props.children}

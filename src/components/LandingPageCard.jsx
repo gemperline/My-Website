@@ -9,9 +9,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+// Components 
+import TransitionsModal from './modals/DBToolModal.jsx';
 // Images
 import LandingPage from '../styles/img/landingPage/landingPage.JPG';
+
+
 
 const useStyles = makeStyles({
   root: {
@@ -70,12 +73,12 @@ export default function LandingPageCard() {
       </CardActionArea>
       <CardActions>
         <div className="col-md-6">
-            <Button color="primary">
-                Learn More
-            </Button>
+        <TransitionsModal className={classes.btn}>
+            Learn More
+          </TransitionsModal>
         </div>
         <div className="col-md-6">
-            <Button color="primary" href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
+            <Button className={classes.btn, "gradient-btn gradient-btn-1"} href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
                 Repository
             </Button>
         </div>

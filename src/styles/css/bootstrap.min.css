@@ -55,7 +55,6 @@ html, body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   height: 100vh;
-
 }
 html {
   scroll-behavior: smooth;
@@ -170,10 +169,6 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
-a:hover {
-
-}
-
 a#menuBtn:hover {
   color: #000;
 }
@@ -1984,6 +1979,34 @@ pre code {
   .table-responsive-lg > .table-bordered {
     border: 0;
   }
+  .footer {
+    display: inline-flex;
+    height: 40px;
+  }
+  #leftFoot {
+    visibility: hidden;
+  }
+  #rightFoot {
+    max-width: 200px;
+    padding: 0;
+    flex-wrap: nowrap;
+    position: relative;
+  }
+  .copyright {
+    padding: 1rem 15px 1rem 0px;
+  }
+  #footer .row {
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  }
+  .icon-button {
+    left: 50%;
+  }
+  .col-lg-4 {
+    max-width: 200px;
+  }
+  
 }
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
@@ -7769,9 +7792,10 @@ button.bg-dark:focus {
   padding-right: 1.5rem !important;
 }
 
-.pb-4,
-.py-4 {
-  padding-bottom: 0.25rem !important;
+.pb-10,
+.py-10 {
+  padding-bottom: 0.5rem !important;
+  padding-top: 0.5rem !important;
 }
 
 .pl-4,
@@ -10516,16 +10540,25 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .footer {
   position: fixed;
+  bottom: 0;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
-  bottom: 0;
   background-color: #f2f2f2;
   font-size: 0.9rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
-
+.footer-bar {
+  width: 100%;
+  height: 3px;
+  background-color: #00d9ff;
+  position: fixed;
+  bottom: 0;
+}
+.underline a:hover {
+  text-decoration: underline;
+}
 .mb-5,.my-5 {
     margin-bottom:3rem!important;
 
@@ -10537,8 +10570,6 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin: auto;
     display:  flex;
     max-width: 600px;
-    right: 0;
-    left: 0;
     flex-flow: row nowrap;
     justify-content: flex-start;
     position: fixed;
@@ -10724,16 +10755,11 @@ a#tab-1:hover {
 }
 
 #connectBtn {
-  position: fixed;
+  position: relative;
   height: 4rem;
-  bottom: -0.5rem;
   cursor: pointer;
 }
-img#connectBtn:hover, img#connectBtn:active {
-  position: fixed;
-  height: 4rem;
-  bottom: -0.5rem;
-}
+
 #search-img {
   max-width: 100%;
   max-height: 100%;
@@ -10781,16 +10807,17 @@ a.nav2-link {
 
 /* Icon Button */
 .icon-button {
-  --button-size: calc(var(--nav-size) * .5);
+  --button-size: calc(var(--nav-size) * 1);
   width: var(--button-size);
   height: var(--button-size);
   border-radius: 50%;
-  padding: 5px;
-  margin: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: filter 300ms;
+}
+.nav2-icon a {
+  position: fixed;
 }
 
 .icon-button:hover {
@@ -10824,20 +10851,12 @@ a.nav2-link {
 
 /* Popup Dashboard Menu */
 .dashboard {
-  position: absolute;
-  bottom:4.25rem;
-  max-width: 1500px;
+  position: relative;
+  width:100%;
   max-height: 200px;
-  transform: translateX(-45%);
+  border-top: 3px solid #00d9ff;
   background-color: rgba(0, 0, 0, 0.7);
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 1rem;
-  border-color: #00d9ff;
-  padding: 0.25rem;
   overflow: hidden;
-  transition: height var(--speed) ease;
-  left: calc(50% - 25px);
 }
 
 /* Dashboard Icon Button */
@@ -10862,6 +10881,7 @@ a.nav2-link {
 .dash-menu {
   display: flex;
   width: 100%;
+  justify-content: center;
 }
 
 .menu-item {
@@ -10941,20 +10961,20 @@ a.nav2-link {
   transition: all var(--speed) ease;
 }
 
-#midFooter {
+#midFoot {
   justify-content: center;
   display:flex;
 }
-
+#rightFoot {
+  text-align: right;
+}
 .dash-li-mg {
   margin: 0.5rem;
 }
 
 svg#connectBtn {
-  position: absolute;
+  position: relative;
   width: 4rem;
-  height: 4rem;
-  bottom: -0.5rem;
 }
 
 
@@ -11411,44 +11431,80 @@ span .fa-plus {
   padding-top: 100px;
 }
 #spacer {
-      height: 500px;
-      width: auto;
-  }
+  height: 500px;
+  width: auto;
+}
 
 .left-col {
-  padding: 20px;
-  text-align: right;
-  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
   font-weight: 700;
 }
-.left-col h2 {
+.left-col h3 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 55px;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 .right-col a:hover {
   color: #7701a5;
 }
-
 .white-trans {
   background-color: rgba(255, 255, 255, 0.65);
 }
 
 .right-col {
   font-family: 'Roboto', sans-serif;
-  text-align: left;
-  padding: 20px;
+  text-align: center;
+  padding: 10px;
  }
-.right-col h5 {
+.right-col h3 {
   font-size: 40px;
   line-height: 40px;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.right-col h3 a {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 .col-md-6 {
   width: 100%;
 }
+.bottom-txt {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  padding: 10px;
+}
+.gradient-btn1 {
+  background: linear-gradient(0deg,#00eeff,#a002fc);
+    background-clip: border-box;
+-webkit-background-clip: text;
+    background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-box-decoration-break: clone;
+box-decoration-break: clone;
+text-shadow: none;
+color: '#000';
+z-index: 0;
+}
+.gradient-btn {
+  text-align: center;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  cursor: pointer;
+  display: inline;
+}
+
+.gradient-btn-1:hover {
+  background-image: linear-gradient(to right, #a002fc 0%, #00eeff 51%, #a002fc 100%);
+  opacity: 0.7;
+}
+
 .my-gradient:hover {
   background: linear-gradient(0deg,#00eeff,#a002fc);
     background-clip: border-box;
