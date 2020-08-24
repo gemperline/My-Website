@@ -10586,9 +10586,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   100% {opacity: 0.3}
 }
 
-body, td, a, p, .h {
-    font-family: arial,sans-serif;
-}
 
 .float-left {
     float: left;
@@ -11494,16 +11491,6 @@ box-decoration-break: clone;
 text-shadow: none;
 color: '#000';
 }
-/* .gradient-btn1 {
-  background: linear-gradient(0deg,#00eeff,#a002fc);
-    background-clip: border-box;
--webkit-background-clip: text;
-    background-clip: text;
--webkit-text-fill-color: transparent;
--webkit-box-decoration-break: clone;
-box-decoration-break: clone;
-text-shadow: none;
-} */
 .gradient-btn {
   text-align: center;
   text-transform: uppercase;
