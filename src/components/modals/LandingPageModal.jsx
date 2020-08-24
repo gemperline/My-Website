@@ -7,9 +7,10 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 // Images
-import MainImage from '../../styles/img/databaseTool/SimulatedMainForm.jpg';
-import ErrorPrompt from '../../styles/img/databaseTool/SimulatedErrorUI.jpg';
-
+import LandingPage from '../../styles/img/landingPage/landingPage.JPG';
+import DDGIF from '../../styles/img/landingPage/dd.gif';
+import DashGIF from '../../styles/img/landingPage/dash.gif';
+import SearchGIF from '../../styles/img/landingPage/searchBar.gif';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -43,11 +44,17 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     width: '100%',
-    padding: '40px',
+    padding: '10px',
+    border: '3px solid #000',
+    borderRadius: 5,
   },
   btn: {
     color: '#fff',
     '&hover': {color: '#fff'},
+  },
+  p: {
+    paddingTop: 10,
+    paddingBottom: 20,
   },
 }));
 
@@ -86,7 +93,7 @@ export default function LandingPageModal() {
                 <h2 id="transition-modal-title" className={classes.h1 && "gradient-txt"}>Imitating A Landing Page</h2>
             </div>
             <div className="row justify-content-center">
-                <Button onClick={handleOpen} href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
+                <Button onClick={handleOpen} href="https://github.com/gemperline/LandingPage" target="_blank">
                 Code Repository
                 </Button>
             </div>
@@ -94,24 +101,48 @@ export default function LandingPageModal() {
             <h3 className={classes.h3}>Overview</h3>
             <p id="transition-modal-description">
               <br/>
-              This project was intended to test the ability to replicate a landing page of a popular search engine.
-                A responsive menu and dashboard were added along with self-designed graphics, icons, and buttons. 
+              This project was intended to test the ability to replicate a landing page of a popular search engine in a timed setting.
+              Contestants were encouraged to add some new functionality or features. Scores were evaluated based page layout accuracy, creativity, and the amount of time needed (24 hr. maximum).
             <br/>
             <br/>
             </p>
             <h3 className={classes.h3}>Tools</h3>
             <p>
               <br/>
-              
+              React JS, JavaScript, jQuery, HTML5, CSS3, Bootstrap, React Transition Group, Adobe Photoshop
               <br/>
               <br/>
             </p>
-            <h3 className={classes.h3}>Images</h3>
-            <p>
+            <h3 className={classes.h3}>The Rundown</h3>
               <br/>
-              
-              <br/>
-            </p>
+              <img src={LandingPage} className={classes.image} alt="Landing Page"/>
+              <p className={classes.p}>
+                <br/>
+                I chose to replicate Google's landing page. 
+                <br/>
+                <br/>
+              </p>
+              <img src={SearchGIF} className={classes.image} alt="Search Bar gif"/>
+              <p className={classes.p}>
+                <br/>
+                This layout is fairly similar to that of Google's landing page at the time. After getting the page layout and elements right, I shifted my focus to adding some new elements.
+                <br/>
+                <br/>
+              </p>
+              <img src={DDGIF} className={classes.image} alt="Dropdown gif"/>
+              <p className={classes.p}>
+                <br/>
+                A responsive navigation menu was built using React Transition Group. The menu resizes upon each transition, adjusting it's width and height according to the new list of elements that it is transiitoning to.
+                <br/>
+                <br/>
+              </p>
+              <img src={DashGIF} className={classes.image} alt="Dashboard gif"/>
+              <p className={classes.p}>
+                <br/>
+                A pop-up dashboard containing quick-links was added at the bottom of the page.
+                <br/>
+                <br/>
+              </p>
           </div>
         </Fade>
       </Modal>

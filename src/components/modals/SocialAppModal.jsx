@@ -44,7 +44,10 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     width: '100%',
-    padding: '40px',
+    padding: '10px',
+    border: '3px solid #000',
+    borderRadius: 5,
+    margin: 5,
   }
 }));
 

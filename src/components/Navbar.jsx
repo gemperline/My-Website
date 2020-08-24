@@ -26,28 +26,28 @@ export function CustomNavBar() {
                             <li><a href="#portfolio">Gallery</a></li>
                             <li><a href="https://github.com/gemperline" target="_blank" rel="noopener noreferrer">Adam's GitHub</a></li>
                             <li className="">
-                            <label htmlFor="btn-3" className="show">Work Samples +</label>
-                            <a href="#portfolio" id="hidden-submenu" className="">Work Samples <CaretRight id="caret" alt=">"/></a>
-                            <input type="checkbox" id="btn-3"/>
-                            <ul>
-                                <li><a href="#portfolio">Database Tool</a></li>
-                                <li><a href="#portfolio">Social Web App</a></li>
-                                <li><a href="#portfolio">This Website</a></li>
-                                <li><a href="#portfolio">Landing Page</a></li>
+                                <label htmlFor="btn-3" className="show">Work Samples +</label>
+                                <a href="#portfolio" id="hidden-submenu" className="">Work Samples <CaretRight id="caret" alt=">"/></a>
+                                <input type="checkbox" id="btn-3"/>
+                                <ul>
+                                    <li><a href="#portfolio">Database Tool</a></li>
+                                    <li><a href="#portfolio">Social Web App</a></li>
+                                    <li><a href="#portfolio">This Website</a></li>
+                                    <li><a href="#portfolio">Landing Page</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                </ul>
-                </li>
-                <li className="yellow">
-                    <label htmlFor="btn-2" className="show">Contact +</label>
-                    <a href="#contact" rel="noopener noreferrer">Contact</a>
-                    <input type="checkbox" id="btn-2"/>
-                    <ul className="yellow-top">
-                        <li><a href="#!">Message Me</a></li>
-                        <li><a href="#contact">Contact Info</a></li>
-                    </ul>
-                </li>
-                    <li className="orange"><a href="#!">Blog</a></li>             
+                    <li className="yellow">
+                        <label htmlFor="btn-2" className="show">Contact +</label>
+                        <a href="#contact" rel="noopener noreferrer">Contact</a>
+                        <input type="checkbox" id="btn-2"/>
+                        <ul className="yellow-top">
+                            <li><a href="#!">Message Me</a></li>
+                            <li><a href="#contact">Contact Info</a></li>
+                        </ul>
+                    </li>
+                    <li className="orange"><a title="Coming Soon!" href="#!"><span>Blog</span></a></li>             
                 </ul>
             </nav>
         </div>   

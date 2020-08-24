@@ -44,7 +44,10 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     width: '100%',
-    padding: '40px',
+    padding: '10px',
+    border: '3px solid #000',
+    borderRadius: 5,
+    margin: 5,
   }
 }));
 
@@ -83,7 +86,7 @@ export default function MyWebsiteModal() {
                 <h2 id="transition-modal-title" className={classes.h1, "gradient-txt"}>AdamGemperline.com</h2>
             </div>
             <div className="row justify-content-center">
-                <Button className={classes.btn && "in-modal-btn"} onClick={handleOpen} href="https://github.com/gemperline/Twitter-esque-Social-App" target="_blank">
+                <Button className={classes.btn && "in-modal-btn"} onClick={handleOpen} href="https://github.com/gemperline/My-Website" target="_blank">
                 Code Repository
                 </Button>
             </div>
