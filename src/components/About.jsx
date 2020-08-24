@@ -11,7 +11,7 @@ import sqlIcon from '../styles/icons/sqlIcon.png';
 import javaIcon from '../styles/icons/javaIcon.png';
 import jQueryIcon from '../styles/icons/jQueryIcon.png';
 import awsIcon from '../styles/icons/aws-logo.png';
-
+import firebaseIcon from '../styles/icons/firebase.png';
 
 export function About() {
     return (
@@ -48,6 +48,7 @@ export function About() {
                 <img src={jQueryIcon} alt="jQuery" title="jQuery"/>
                 <img src={sqlIcon} alt="SQL" title="SQL"/>
                 <img src={awsIcon} alt="AWS" title="AWS"/>
+                <img src={firebaseIcon} alt="Firebase" title="Firebase"/>
             </div>
             </div>
         </div>

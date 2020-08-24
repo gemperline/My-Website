@@ -43,7 +43,7 @@ export function CustomNavBar() {
                         <a href="#contact" rel="noopener noreferrer">Contact</a>
                         <input type="checkbox" id="btn-2"/>
                         <ul className="yellow-top">
-                            <li><a href="#!">Message Me</a></li>
+                            {/* <li><a href="#!">Message Me</a></li> */}
                             <li><a href="#contact">Contact Info</a></li>
                         </ul>
                     </li>
