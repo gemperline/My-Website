@@ -7,10 +7,6 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 // Images
-import RegisterImg from '../../styles/img/socialApp/Register.JPG';
-import LoginPageImg from '../../styles/img/socialApp/Login.JPG';
-import HomePageImg from '../../styles/img/socialApp/HomePage.JPG';
-import EditModalImg from '../../styles/img/socialApp/EditModal.JPG';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -48,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     border: '3px solid #000',
     borderRadius: 5,
     margin: 5,
-  }
+  },
 }));
 
 export default function MyWebsiteModal() {

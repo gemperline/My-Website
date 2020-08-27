@@ -32,6 +32,7 @@ const useStyles = makeStyles({
     borderStyle: 'solid',
     borderColor: '#000',
     borderWidth: 1,  
+    cursor: 'default',
   },
   text: {
     textAlign: 'left',
@@ -42,6 +43,9 @@ const useStyles = makeStyles({
     textAlign: 'center',
     paddingBottom: 16,
     color: '#000'
+  },
+  cardContent: {
+    cursor: 'default',
   },
 });
 
@@ -55,7 +59,7 @@ export default function DBToolCard() {
           className={classes.media}
           image={DBTool}
         />
-        <CardContent>
+        <CardContent className={classes.cardContent}>
           <Typography gutterBottom variant="h5" component="h3" className={classes.text}>
             Script Manager
           </Typography>

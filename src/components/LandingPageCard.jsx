@@ -29,6 +29,7 @@ const useStyles = makeStyles({
     borderStyle: 'solid',
     borderColor: '#000',
     borderWidth: 1,
+    cursor: 'default',
   },
   text: {
     textAlign: 'left',
@@ -44,6 +45,9 @@ const useStyles = makeStyles({
     color: '#fff',
     '&hover': {color: '#fff'},
   },
+  cardContent: {
+    cursor: 'default',
+  },
 });
 
 export default function LandingPageCard() {
@@ -56,7 +60,7 @@ export default function LandingPageCard() {
           className={classes.media}
           image={LandingPage}
         />
-        <CardContent>
+        <CardContent className={classes.cardContent}>
           <Typography gutterBottom variant="h5" component="h3" className={classes.text}>
             Landing Page Imitation
           </Typography>
@@ -75,7 +79,7 @@ export default function LandingPageCard() {
           </LandingPageModal>
         </div>
         <div className="col-md-6">
-            <Button type="button" className={classes.btn && "gradient-btn gradient-btn-1"} href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
+            <Button type="button" className={classes.btn && "gradient-btn gradient-btn-1"} href="https://github.com/gemperline/LandingPage" target="_blank">
                 Repository
             </Button>
         </div>

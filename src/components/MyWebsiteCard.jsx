@@ -29,6 +29,7 @@ const useStyles = makeStyles({
     borderStyle: 'solid',
     borderColor: '#000',
     borderWidth: 1,
+    cursor: 'default',
   },
   text: {
     textAlign: 'left',
@@ -43,6 +44,9 @@ const useStyles = makeStyles({
   btn: {
     borderRadius: '30px',
   },
+  cardContent: {
+    cursor: 'default',
+  }
 });
 
 export default function MyWebsiteCard() {
@@ -55,7 +59,7 @@ export default function MyWebsiteCard() {
           className={classes.media}
           image={DBTool}
         />
-        <CardContent>
+        <CardContent className={classes.cardContent}>
           <Typography gutterBottom variant="h5" component="h3" className={classes.text}>
             This Website
           </Typography>
