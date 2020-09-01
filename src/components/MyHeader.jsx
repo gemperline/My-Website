@@ -12,7 +12,7 @@ export function MyHeader() {
                     <h1>Adam Gemperline</h1>
                     <h5>Software Dev | Web Design</h5>
                     <a href="#portfolio">
-                    <button type="button" className="cta">{"See More"}</button>
+                    <button type="button" className="cta"><span>See More</span></button>
                     </a>
                 </div>
             </div>

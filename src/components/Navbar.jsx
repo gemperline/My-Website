@@ -10,7 +10,7 @@ export function CustomNavBar() {
     return (
         <div className="nav3">
             <nav>
-                <div className="logo">Adam Gemperline</div>
+                {/* <div className="logo">Adam Gemperline</div> */}
                 <label htmlFor="btn" className="icon">
                     <MobileMenuIcon />
                 </label>
@@ -19,14 +19,14 @@ export function CustomNavBar() {
                     <li className="violet"><a href="#intro">Home</a></li>
                     <li className="blue"><a href="#about">About</a></li>
                     <li className="green">
-                        <label htmlFor="btn-1" className="show">Portfolio +</label>
+                        <label htmlFor="btn-1" className="miniNav">Portfolio +</label>
                         <a href="#portfolio">Portfolio</a>
                         <input type="checkbox" id="btn-1"/>
                         <ul className="green-top">
                             <li><a href="#portfolio">Gallery</a></li>
                             <li><a href="https://github.com/gemperline" target="_blank" rel="noopener noreferrer">Adam's GitHub</a></li>
                             <li className="">
-                                <label htmlFor="btn-3" className="show">Work Samples +</label>
+                                <label htmlFor="btn-3" className="miniNav">Work Samples +</label>
                                 <a href="#portfolio" id="hidden-submenu" className="">Work Samples <CaretRight id="caret" alt=">"/></a>
                                 <input type="checkbox" id="btn-3"/>
                                 <ul>
@@ -39,7 +39,7 @@ export function CustomNavBar() {
                         </ul>
                     </li>
                     <li className="yellow">
-                        <label htmlFor="btn-2" className="show">Contact +</label>
+                        <label htmlFor="btn-2" className="miniNav">Contact +</label>
                         <a href="#contact" rel="noopener noreferrer">Contact</a>
                         <input type="checkbox" id="btn-2"/>
                         <ul className="yellow-top">
