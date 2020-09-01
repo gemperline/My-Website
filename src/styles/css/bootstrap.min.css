@@ -1962,6 +1962,8 @@ pre code {
 @media (max-width: 600px) {
   #rightFoot {
     font-size: 10px !important;
+  }
+  .copyright {
     display: ruby-base;
   }
   .cta span {
