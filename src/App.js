@@ -9,6 +9,7 @@ import  DBToolCard  from './components/DBToolCard.jsx';
 import  SocialAppCard  from './components/SocialAppCard.jsx';
 import  MyWebsiteCard  from './components/MyWebsiteCard.jsx';
 import  LandingPageCard  from './components/LandingPageCard.jsx';
+import  CCVerifyCard  from './components/CCVerifyCard.jsx';
 import  SwipeableTemporaryDrawer  from './components/SocialDrawer.jsx';
 import { Spacer } from './components/Spacer.jsx';
 
@@ -26,20 +27,27 @@ class App extends React.Component {
 
     <div id="portfolio" className="container-fluid hero white-trans">
       <h2>Work Samples</h2>
-      <div className="row">
-        <div className="x-margin-25">
-          <DBToolCard/>
+      <div className="flex-grid">
+        <div className="row">
+          <div className="col x-margin-25">
+            <DBToolCard/>
+          </div>
+          <div className="col x-margin-25">
+            <SocialAppCard/>
+          </div>
+          <div className="col x-margin-25">
+            <MyWebsiteCard/>
+          </div>
         </div>
-        <div className="x-margin-25">
-          <SocialAppCard/>
         </div>
-        <div className="x-margin-25">
-          <MyWebsiteCard/>
-        </div>
-      </div>
-      <div className="row">
-      <div className="x-margin-25">
-          <LandingPageCard/>
+        <div className="flex-grid">
+        <div className="row">
+          <div className="col x-margin-25">
+            <LandingPageCard/>
+          </div>
+          <div className="col x-margin-25">
+            <CCVerifyCard/>
+          </div>
         </div>
       </div>
       <Spacer/>

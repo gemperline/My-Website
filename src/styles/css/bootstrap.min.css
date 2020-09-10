@@ -11181,7 +11181,7 @@ span .fa-plus {
 
 /* Navbar response to smaller resolution */
 @media all and (max-width: 968px) {
-  #about, #portfolio, #contact, #leftFoot {
+  #about, #contact, #leftFoot {
     display: none !important;
     visibility: hidden !important;
   }
@@ -11337,7 +11337,7 @@ span .fa-plus {
   padding: 10px 10px 10px 10px; 
 }
 .x-margin-25 {
-  margin: 0 25px;
+  margin: 25px;
 }
 .work-sample-card h2{
   text-align: left;
@@ -11605,4 +11605,16 @@ text-shadow: none;
 .hidden {
   visibility: hidden;
   display: none;
+}
+.flex-grid {
+  display: d;
+}
+.col {
+  flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .flex-grid {
+    display: column;
+  }
 }

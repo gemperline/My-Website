@@ -56,6 +56,12 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 10,
     paddingBottom: 20,
   },
+  centerTxt: {
+    textAlign: 'center',
+  },
+  b: {
+    fontWeight: 'bold',
+  },
 }));
 
 export default function LandingPageModal() {
@@ -98,6 +104,9 @@ export default function LandingPageModal() {
                 </Button>
             </div>
             <br/>
+              <div className={classes.centerTxt}>** <b className={classes.boldTxt}>Disclaimer:</b> This project is intended solely for the purpose of learning and is not deployed. **</div>
+            <br/>
+            <br/>
             <h3 className={classes.h3}>Overview</h3>
             <p id="transition-modal-description">
               <br/>
@@ -132,7 +141,7 @@ export default function LandingPageModal() {
               <img src={DDGIF} className={classes.image} alt="Dropdown gif"/>
               <p className={classes.p}>
                 <br/>
-                A responsive navigation menu was built using React Transition Group. The menu resizes upon each transition, adjusting it's width and height according to the new list of elements that it is transiitoning to.
+                A responsive navigation menu was built using React Transition Group. The menu resizes upon each transition, adjusting it's width and height according to the new list of elements that it is transiitoning to. A few self-designed graphics, icons, and buttons were added as well. 
                 <br/>
                 <br/>
               </p>

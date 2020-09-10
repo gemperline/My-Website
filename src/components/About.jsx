@@ -12,6 +12,7 @@ import javaIcon from '../styles/icons/javaIcon.png';
 import jQueryIcon from '../styles/icons/jQueryIcon.png';
 import awsIcon from '../styles/icons/aws-logo.png';
 import firebaseIcon from '../styles/icons/firebase.png';
+import phpIcon from '../styles/icons/phpIcon.png';
 
 export function About() {
     return (
@@ -27,7 +28,7 @@ export function About() {
           </div>
           <div className="row bottom-txt">
             <div className="col-md x-mg-100 ez-read">
-              <h3 className="my-gradient">So far, I consider myself to be a bit of a software development generalist. Most of my formal education involved applying back-end programming techniques to OOP and OOA/D concepts. However, the "Creator" in me quickly became interested in designing aesthetically-beautiful things, so I began learning front-end development. I've worked professionally with server-side and end-user langauges and tools, and I'm eager to continue tinkering my way to becoming a master.</h3>
+              <h3 className="my-gradient">So far, I consider myself to be a bit of a software development generalist. Most of my formal education involved applying back-end programming techniques to OOP and OOA/D concepts. However, the "Creator" in me quickly became interested in designing beautiful things, so I began learning front-end development. I've worked professionally with server-side and end-user langauges and tools, and I'm eager to continue tinkering my way to becoming a master.</h3>
             </div>
           </div>
           
@@ -42,6 +43,7 @@ export function About() {
                 <img src={javaIcon} alt="Java" title="Java"/>
                 <img src={html5Icon} alt="HTML5" title="HTML5"/>
                 <img src={css3Icon} alt="CSS3" title="CSS3"/>
+                <img src={phpIcon} alt="PHP" title="PHP"/>
                 <img src={jsIcon} alt="JavaScript" title="JavaScript"/>
                 <img src={reactIcon} alt="React" title="React"/>
                 <img src={nodejsIcon} alt="Node.js" title="Node.js"/>

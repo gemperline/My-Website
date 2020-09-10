@@ -66,9 +66,7 @@ export default function LandingPageCard() {
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p" className={classes.p}> 
             This project was intended to test the ability to replicate a landing page of a popular search engine.
-            A responsive menu and dashboard were added along with self-designed graphics, icons, and buttons. 
             <br/>
-            *Disclaimer*: This project is intended solely for the purpose of learning and is not deployed.
           </Typography>
         </CardContent>
       </CardActionArea>
