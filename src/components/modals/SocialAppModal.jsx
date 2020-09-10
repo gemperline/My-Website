@@ -94,14 +94,14 @@ export default function SocialWebAppModal() {
             <h3 className={classes.h3}>Overview</h3>
             <p id="transition-modal-description">
               <br/>
-              This web application is a personal project that is currently being developed and serves as a social media web application reminiscent of Twitter or other social blogging sites. I’m using a model like Twitter’s because many of the fundamental components and functionalities are similar, however, the primary use cases of this application will be rather different than what Twitter is used for. The app’s true intentions will have to remain under wraps for now, but I’m excited to share what I’ve made public so far!              <br/>
+              This web application is a personal project that is currently being developed and serves as a social media web application reminiscent of Twitter or other social blogging sites. I’m using a model like Twitter’s because many of the fundamental components and functionalities are similar, however, the primary use cases of this application will be quite different than what is shown here. The app’s true ambitions will have to remain under wraps for now, but I’m happy to share what I can!<br/>
               <br/>
               <br/>
             </p>
             <h3 className={classes.h3}>Tools</h3>
             <p>
               <br/>
-              React JS, Redux, JavaScript, jQuery, JSON, HTML5, CSS3, Bootstrap, Postman, GCF, Firebase
+              React JS, Redux, JavaScript, jQuery, JSON, HTML5, CSS3, Bootstrap, Postman, Google Cloud Functions, Firebase
               <br/>
               <br/>
             </p>
