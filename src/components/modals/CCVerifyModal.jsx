@@ -126,7 +126,7 @@ export default function CCVerifyModal() {
             <p>
               <img src={ErrorCheckImage} className={classes.image} alt="Error check"/>
               <br/>
-                It can be seen above that a random card number that meets the 13-16 digit requirement still fails. Upon the 'Purchase' button click event, the number entered in the Card Number field is passed along to a function that runs it through the Luhn Algorithm which performs a sequence of operations and checks on the number.
+                It can be seen above that a random card number that meets the 13-16 digit requirement still fails. Upon the 'Purchase' button click event, the number entered in the Card Number field is passed along to a function that runs it through the Luhn Algorithm. The algorithm then performs a sequence of operations and checks on the number and returns a true or false value.
                 <br/>
                 <br/>
                 A false value is returned for an invalid number and the background around the field is highlighted in red.
