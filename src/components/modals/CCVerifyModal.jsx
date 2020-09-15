@@ -135,7 +135,7 @@ export default function CCVerifyModal() {
             <h3 className={classes.h3}>A Valid Card Number</h3>
               <img src={VerifyImage} className={classes.image} alt="Verified"/>
               <p>
-                If the card number passes the all Luhn Algorithm checks, it is a valid credit card number and the function will return a true value. The system will then parse the text in the input fields and store it in respective private variables. The user is then directed to a very simple payment confirmation page.
+                If the card number passes all Luhn Algorithm checks, it is a valid credit card number and the function will return a true value. The system will then parse the text in the input fields and store it in respective private variables. The user is then directed to a very simple payment confirmation page.
               <br/>
               <br/>
                 This program was intended solely for implementing the Luhn Algorithm and for practice building a Java GUI. No other credit card details (CVV number, name, etc.) are verified against the provided card number. 

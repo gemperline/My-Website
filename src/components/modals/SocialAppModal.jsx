@@ -101,7 +101,7 @@ export default function SocialWebAppModal() {
             <h3 className={classes.h3}>Tools</h3>
             <p>
               <br/>
-              React JS, Redux, JavaScript, jQuery, JSON, HTML5, CSS3, Bootstrap, Postman, Google Cloud Functions, Firebase
+              React JS, Redux, Express, JavaScript, jQuery, JSON, HTML5, CSS3, Bootstrap, Postman, Google Cloud Functions, Firebase
               <br/>
               <br/>
             </p>
@@ -110,13 +110,13 @@ export default function SocialWebAppModal() {
               <br/>
               The back-end functions and API requests are currently being built using JavaScript and jQuery. API requests are tested using Postman. The app is using Firebase for the database, storage, and authentication; hence, user authorization and other security features are mostly done with Google Cloud Functions.              <br/>
               <br/>
-              The front-end is being developed with React JS, Redux, HTML, CSS, and Bootstrap. The UI is sleek and includes working user login and registration pages with form error checking. The home page includes community posts and comments that are retrieved from the database. If a user is logged in, the home page will also display their profile card which contains their picture and basic information on the right side of the page. ‘Like’ buttons have been implemented to posts and are functional. The commenting feature’s functions have been written and are being implemented in the UI soon. Likes and comments on a user’s post each send the user a notification, which is working on the back end, but needs to be implemented in the UI. If a user’s makes any changes to their profile information via the edit modal, the database is updated in real-time and the profile card refreshes with the new information visible.               <br/>
+              The front-end is being developed with React JS, Redux, HTML, CSS, and Bootstrap. The UI is sleek and includes working user login and registration pages with form error checking. The home page includes community posts and comments that are retrieved from the database. If a user is logged in, the home page will also display their profile card which contains their picture and basic information on the right side of the page. ‘Like’ buttons have been implemented and are functional. The commenting feature’s functions have been written and will be implemented in the UI soon. Likes and comments on a user’s post each send the user a notification, which is working on the back end, but needs to be implemented in the UI. Thanks to Redux's means of centralized state management, if a user makes any changes to their profile information via the edit modal, likes a post, or comments on a post, the database is updated and the affected components will refresh in real-time.               <br/>
               <br/>
             </p>
             <h3 className={classes.h3}>Images</h3>
             <p>
               <br/>
-              Registration Page checks: valid email, password matching, form completeness, username valid.
+              Registration Page: Checks for valid email, password matching, form completeness, and username availibility.
               <br/>
               <img src={RegisterImg} className={classes.image} alt="Registration Page"/>
               <br/>
