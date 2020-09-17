@@ -117,7 +117,7 @@ export default function CCVerifyModal() {
                 <br/>
                 <div className={classes.center}>
                     <p>
-                    You can read about how the algorithm works <a href="https://en.wikipedia.org/wiki/Luhn_algorithm" target="_blank" className={classes.link}> here</a>
+                    You can read about how the algorithm works <a href="https://en.wikipedia.org/wiki/Luhn_algorithm" target="_blank" rel="noopener noreferrer" className={classes.link}> here</a>
                     </p>
                 </div>
                 <br/>

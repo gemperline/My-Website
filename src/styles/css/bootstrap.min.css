@@ -5761,7 +5761,7 @@ a.close.disabled {
   background-color: #000;
   border-radius: 0.25rem;
 }
-
+/* 
 .popover {
   position: absolute;
   top: 0;
@@ -5935,7 +5935,7 @@ a.close.disabled {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
-}
+} */
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
@@ -11097,7 +11097,33 @@ svg#connectBtn {
   box-shadow: 0 0 15px #ff9900,
                0 0 15px #ff9900;
 }
-
+.message-btn {
+  background-color: #fff;
+  color: #000 !important;
+  border-radius: 30px;
+}
+.message-btn:hover {
+  background-color: #000;
+  color: #fff !important;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #858585,
+               0 0 15px #858585;
+}
+/* #right-nav {
+  float: right;
+} */
+.msg {
+  display: flex;
+  position: relative;
+  justify-content: right;
+}
+#center-nav {
+  justify-content: center;
+  width: auto;
+}
+#nav-list {
+  display: flex;
+}
 .nav3 nav ul ul {
   position: absolute;
   top: 30px;
@@ -11180,6 +11206,19 @@ span .fa-plus {
 }
 
 /* Navbar response to smaller resolution */
+@media all and (max-width: 1080px) {
+  #msg-btn, #left-nav, #right-nav {
+    visibility: hidden;
+    display: none;
+  }
+  #nav-list{
+    justify-content: center;
+  }
+  .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 @media all and (max-width: 968px) {
   #about, #contact, #leftFoot {
     display: none !important;
@@ -11617,4 +11656,10 @@ text-shadow: none;
   .flex-grid {
     display: column;
   }
+}
+
+.msg-header {
+  text-align: center;
+  color: purple !important;
+  font-weight: bold;
 }
