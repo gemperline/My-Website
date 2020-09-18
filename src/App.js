@@ -62,8 +62,8 @@ class App extends React.Component {
             <p>I'm interested in learing about new opportunities from software 
               development to web design &ndash; let's chat!
             </p>
-            <a className="email" href="mailto:adamgemperline@gmail.com"><span>Email me!</span></a>
-            <a href="#contact" data-toggle="modal" data-target="#message-modal"><button type="button" className="cta" onClick={() => MessageModal}>Contact</button></a>
+            {/* <a className="email" href="mailto:adamgemperline@gmail.com"><span>Email me!</span></a> */}
+            <MessageModal></MessageModal>
           </div>
         </div>
         
