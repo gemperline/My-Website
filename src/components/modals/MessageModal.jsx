@@ -71,7 +71,7 @@ const FormDialog = () => {
         style={{ 
         borderRadius:'30px',
         borderWidth: '2px',
-        backgroundColor: '#00d9ff',
+        backgroundColor: 'rgb(0, 231, 255)',
         color: '#000',
         fontFamily: 'sans-serif',
         fontSize: '18px',
@@ -144,7 +144,6 @@ const FormDialog = () => {
       </Dialog> */}
 
 export default withStyles(styles)(FormDialog);
-
 
 
 

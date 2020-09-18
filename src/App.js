@@ -12,6 +12,7 @@ import  LandingPageCard  from './components/LandingPageCard.jsx';
 import  CCVerifyCard  from './components/CCVerifyCard.jsx';
 import  SwipeableTemporaryDrawer  from './components/SocialDrawer.jsx';
 import { Spacer } from './components/Spacer.jsx';
+import MessageModal from './components/modals/MessageModal.jsx';
 
 // Images
 import Palms from './styles/img/palms.jpg';
@@ -62,7 +63,7 @@ class App extends React.Component {
               development to web design &ndash; let's chat!
             </p>
             <a className="email" href="mailto:adamgemperline@gmail.com"><span>Email me!</span></a>
-            <a href="#contact" data-toggle="modal" data-target="#message-modal"><button type="button" className="cta">Contact</button></a>
+            <a href="#contact" data-toggle="modal" data-target="#message-modal"><button type="button" className="cta" onClick={() => MessageModal}>Contact</button></a>
           </div>
         </div>
         
