@@ -55,7 +55,7 @@ export default function LandingPageCard() {
 
   return (
     <Card className={classes.root} onMouseEnter={() => useStyles}>
-      <CardActionArea>
+      <CardActionArea disableRipple="true">
         <CardMedia
           className={classes.media}
           image={LandingPage}

@@ -11422,9 +11422,14 @@ span .fa-plus {
   flex-wrap: row nowrap;
   justify-content: flex-start;
   margin: 0;
+  top: 40%;
 }
 .contact-content p {
   width: 50%;
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 10px;
+  box-shadow: 0 0 5px #000;
 }
 .contact-background {
   text-align: center;
@@ -11672,4 +11677,16 @@ text-shadow: none;
   display: flex;
   flex-shrink: inherit;
   margin: auto;
+}
+.myPhoto {
+  max-width: 20%;
+  padding: 5px;
+  margin: 30px auto;
+  border: 4px solid #000;
+  border-radius: 100px;
+  box-shadow: 0 0 5px #000;
+}
+.box-shadow-5 {
+  box-shadow: 0 0 5px #000;
+  border-radius: 10px;
 }

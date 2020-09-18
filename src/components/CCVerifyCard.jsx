@@ -54,7 +54,7 @@ export default function CCVerifyCard() {
 
   return (
     <Card className={classes.root} onMouseEnter={() => useStyles}>
-      <CardActionArea>
+      <CardActionArea disableRipple="true">
         <CardMedia
           className={classes.media}
           image={MainImage}

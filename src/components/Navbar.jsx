@@ -53,7 +53,7 @@ export function CustomNavBar() {
                         <li className="orange"><a title="Coming Soon!" href="#!"><span>Blog</span></a></li>
                     </div>
                     <div id="right-nav" className="col-lg-3 msg">
-                        <li id="msg-btn"><MessageModal>Message Me</MessageModal></li>          
+                        <li id="msg-btn" title="Message Me"><MessageModal>Message Me</MessageModal></li>          
                     </div>
                 </ul>
             </nav>

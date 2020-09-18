@@ -16,6 +16,7 @@ import MessageModal from './components/modals/MessageModal.jsx';
 
 // Images
 import Palms from './styles/img/palms.jpg';
+import myPhoto from './styles/img/roundProfile.png';
 
 class App extends React.Component {
   render() {
@@ -56,14 +57,17 @@ class App extends React.Component {
 
         {/* Contact */}
         <div id="contact" className="container-fluid hero">
-          <img src={Palms} alt="AG"/>
-          <div className="hero contact-content">
+          <img style={{ width: '100%' }} src={Palms} alt="AG"/>      
+          <div className="hero contact-content">  
             <h2>Contact Me</h2>
+            <img className="myPhoto" src={myPhoto} alt="Adam Gemperline"/>    
             <p>I'm interested in learing about new opportunities from software 
               development to web design &ndash; let's chat!
             </p>
             {/* <a className="email" href="mailto:adamgemperline@gmail.com"><span>Email me!</span></a> */}
-            <MessageModal></MessageModal>
+            <div className="box-shadow-5">
+              <MessageModal/>
+            </div>
           </div>
         </div>
         

@@ -90,7 +90,7 @@ const FormDialog = () => {
       </MsgButton>
 
       <Dialog open={open} onClose={handleClose} aria-labelledby="Form-dialog-title" >
-        <DialogTitle id="form-dialog-title" className="txt-center" style={{ color: "#a002fc", fontSize:"1.75rem" }}>Let's Chat!</DialogTitle>
+        <DialogTitle id="form-dialog-title" className="txt-center" style={{ color: "#a002fc", fontSize:'48px' }}>Let's Chat!</DialogTitle>
         <DialogContent>
           <DialogContentText>
             Please enter your information and message below
@@ -129,7 +129,7 @@ const FormDialog = () => {
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="secondary" style={{ borderRadius:'30px'}} disableRipple="true">
+          <Button onClick={handleClose} color="none" style={{ borderRadius:'30px'}} disableRipple="true">
             Cancel
           </Button>
           <Button onClick={handleSubmit} color="primary" type="submit" style={{ borderRadius:'30px'}} disableRipple="true">
