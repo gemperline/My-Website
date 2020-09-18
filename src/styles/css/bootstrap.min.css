@@ -65,7 +65,9 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
-
+.prevent-shift {
+  width: calc(100vw - 1px);
+}
 
 body {
   margin: 0;
@@ -5466,7 +5468,7 @@ a.close.disabled {
 }
 
 .modal-open {
-  overflow: hidden;
+  overflow-y: inherit;
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -11664,4 +11666,10 @@ text-shadow: none;
 .txt-center {
   text-align: center;
 }
-
+.msgIcon {
+  padding: 1px 4px;
+  max-width: 56px;
+  display: flex;
+  flex-shrink: inherit;
+  margin: auto;
+}

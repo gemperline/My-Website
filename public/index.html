@@ -11,6 +11,21 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>AdamGemperline.com</title>
+    <!-- Global styling to prevent element shift upon scrollbar disabled (due to modal open/close) -->
+    <style>
+      html {
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      body, #root {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+      }
+    </style>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   </head>
   <body>

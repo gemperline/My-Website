@@ -15,7 +15,8 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 // import CloseIcon from '@material-ui/icons/Close';
 import { makeStyles } from '@material-ui/core/styles';
 import { TextareaAutosize } from '@material-ui/core';
-
+// icons
+import MsgIcon from '../../styles/icons/msgIcon.png';
 // firebase db
 import {db} from '../firebase.js';
 
@@ -69,7 +70,7 @@ const FormDialog = () => {
     <Form onSubmit={handleSubmit}>
       <MsgButton
         style={{ 
-        borderRadius:'30px',
+        borderRadius:'8px',
         borderWidth: '2px',
         backgroundColor: '#1b1b1b',
         color: '#fff',
@@ -77,17 +78,19 @@ const FormDialog = () => {
         fontSize: '18px',
         textTransform: 'none',
         borderWidth: '1px',
-        padding: '2px 15px',
+        padding: '2px 4px',
+        margin: '3px'
         }}
         className="msgBtn"
         variant="outlined"
         color="primary" 
         onClick={handleClickOpen} 
         disableRipple="true">
-          Message Me
+        <img src={MsgIcon} className="msgIcon" alt="Message Me"/>
       </MsgButton>
+
       <Dialog open={open} onClose={handleClose} aria-labelledby="Form-dialog-title" >
-        <DialogTitle id="form-dialog-title" className="txt-center" style={{ color: "purple" }}>Let's Chat!</DialogTitle>
+        <DialogTitle id="form-dialog-title" className="txt-center" style={{ color: "#a002fc", fontSize:"1.75rem" }}>Let's Chat!</DialogTitle>
         <DialogContent>
           <DialogContentText>
             Please enter your information and message below
