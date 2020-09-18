@@ -11109,13 +11109,11 @@ svg#connectBtn {
   box-shadow: 0 0 15px #858585,
                0 0 15px #858585;
 }
-/* #right-nav {
-  float: right;
-} */
 .msg {
   display: flex;
   position: relative;
   justify-content: right;
+  align-items: center;
 }
 #center-nav {
   justify-content: center;
@@ -11663,3 +11661,7 @@ text-shadow: none;
   color: purple !important;
   font-weight: bold;
 }
+.txt-center {
+  text-align: center;
+}
+

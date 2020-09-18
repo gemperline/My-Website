@@ -65,7 +65,6 @@ class App extends React.Component {
             <a href="#contact" data-toggle="modal" data-target="#message-modal"><button type="button" className="cta">Contact</button></a>
           </div>
         </div>
-  
         
         {/* Footer items */}
         <footer id="footer" className="footer py-10">
