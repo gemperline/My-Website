@@ -615,6 +615,8 @@ pre code {
   flex-wrap: wrap;
   margin-right: -0.75rem;
   margin-left: -0.75rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .no-gutters {
@@ -11064,12 +11066,15 @@ svg#connectBtn {
   font-size: 18px;
   padding: 9px 15px;
 }
-
+.box-shad-trans {
+  transition: box-shadow .2s ease-in-out;
+}
  .violet a:hover {
   color: #ffffff;
   border-radius: 30px;
   box-shadow: 0 0 15px #7017ff,
                0 0 15px #7017ff;
+  transition: box-shadow .3s ease-in-out;
 }
 
 .blue a:hover {
@@ -11077,6 +11082,7 @@ svg#connectBtn {
   border-radius: 30px;
   box-shadow: 0 0 15px #00d9ff,
                0 0 15px #00d9ff;
+  transition: box-shadow .2s ease-in-out;
 }
 
 .green a:hover {
@@ -11084,6 +11090,7 @@ svg#connectBtn {
   border-radius: 30px;
   box-shadow: 0 0 15px #00ff40,
                0 0 15px #00ff40;
+  transition: box-shadow .2s ease-in-out;
 }
 
 .yellow a:hover {
@@ -11091,6 +11098,7 @@ svg#connectBtn {
   border-radius: 30px;
   box-shadow: 0 0 15px #ffee00,
                0 0 15px #ffee00;
+  transition: box-shadow .2s ease-in-out;
 }
 
 .orange a:hover {
@@ -11098,6 +11106,7 @@ svg#connectBtn {
   border-radius: 30px;
   box-shadow: 0 0 15px #ff9900,
                0 0 15px #ff9900;
+  transition: box-shadow .2s ease-in-out;
 }
 .message-btn {
   background-color: #fff;
@@ -11138,7 +11147,7 @@ svg#connectBtn {
   border-bottom-right-radius: 20px;
   border-style: solid;
 }
-.nav3 nav ul ul li a:hover {
+.nav3 nav ul ul li a:hover, .miniNav:hover {
   color: #fff;
   box-shadow: none;
   background-color: #575656;
@@ -11498,6 +11507,7 @@ span .fa-plus {
   border: none;
   cursor: pointer; 
   border-radius: 30px;
+  transition: box-shadow .5s ease-in-out;
 }
 .cta:hover {
   box-shadow: 0 0 15px #00d9ff,
@@ -11609,16 +11619,24 @@ color: '#000';
 box-decoration-break: clone;
 text-shadow: none;
 }
+.ez-read h3 {
+  padding: 20px;
+}
 .ez-read {
   border-width: 0px;
-  border-radius: 30px;
+  border-radius: 100px;
   animation: 1s ease-in-out 0s normal forwards about-bg-opacity-out;
+  transition: box-shadow 1s ease-in-out;
+  margin: 0 10px
 }
 .ez-read:hover {
   border-color: '#fff';
   border-style: solid;
+  -moz-box-shadow: 0px 0px 35px rgba(255, 255, 255);
+  -webkit-box-shadow: 0px 0px 35px rgba(255, 255, 255);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
   border-width: 0px;
-  border-radius: 30px;
+  border-radius: 100px;
   animation: 1s ease-in-out 0s normal forwards about-bg-opacity-in;
 }
 @keyframes about-bg-opacity-in {
@@ -11626,8 +11644,8 @@ text-shadow: none;
   100% {background-color: rgba(255, 255, 255, 1);}
 }
 @keyframes about-bg-opacity-out {
-  0% {background-color: rgba(255, 255, 255, 1);}
-  100% {background-color: rgba(255, 255, 255, 0);}
+  0% {background-color: rgba(255, 255, 255, 1); box-shadow: rgba(255, 255, 255, 1);}
+  100% {background-color: rgba(255, 255, 255, 0); box-shadow: rgba(255, 255, 255, 0);}
 }
 .x-mg-100 {
   margin: 0 100px;
@@ -11651,10 +11669,17 @@ text-shadow: none;
   display: none;
 }
 .flex-grid {
-  display: d;
+  display: grid;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .col {
   flex: 1;
+  width: auto;
+  justify-content: center !important;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
@@ -11689,4 +11714,43 @@ text-shadow: none;
 .box-shadow-5 {
   box-shadow: 0 0 5px #000;
   border-radius: 10px;
+}
+#about .col-md-6 {
+  max-width: 45%;
+}
+
+
+/*  */
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: inline-start;
+  margin: 1% 0 1% 1.6%;
+  min-width: 350px;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }

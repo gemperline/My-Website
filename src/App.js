@@ -30,27 +30,27 @@ class App extends React.Component {
     <div id="portfolio" className="container-fluid hero white-trans">
       <h2>Work Samples</h2>
       <div className="flex-grid">
-        <div className="row">
-          <div className="col x-margin-25">
-            <DBToolCard/>
-          </div>
-          <div className="col x-margin-25">
-            <SocialAppCard/>
-          </div>
-          <div className="col x-margin-25">
-            <MyWebsiteCard/>
-          </div>
-        </div>
-        </div>
-        <div className="flex-grid">
-        <div className="row">
-          <div className="col x-margin-25">
-            <LandingPageCard/>
-          </div>
-          <div className="col x-margin-25">
-            <CCVerifyCard/>
-          </div>
-        </div>
+ 
+      <div class="section group">
+	<div class="col span_1_of_3">
+	  <DBToolCard/>
+	</div>
+	<div class="col span_1_of_3">
+	  <SocialAppCard/>
+	</div>
+	<div class="col span_1_of_3">
+	  <MyWebsiteCard/>
+	</div>
+</div>
+<div class="section group">
+	<div class="col span_1_of_3">
+    <LandingPageCard/>
+	</div>
+	<div class="col span_1_of_3">
+    <CCVerifyCard/>
+	</div>
+</div>
+
       </div>
       <Spacer/>
     </div>

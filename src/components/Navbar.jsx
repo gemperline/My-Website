@@ -11,9 +11,8 @@ export function CustomNavBar() {
     return (
         <div className="nav3">
             <nav>
-                {/* <div className="logo">Adam Gemperline</div> */}
                 <label htmlFor="btn" className="icon">
-                    <MobileMenuIcon />
+                    <MobileMenuIcon/>
                 </label>
                 <input type="checkbox" id="btn"></input>
                 <ul id="nav-list">
