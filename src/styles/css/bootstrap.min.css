@@ -11698,10 +11698,10 @@ text-shadow: none;
 }
 .msgIcon {
   padding: 1px 4px;
-  max-width: 56px;
+  max-height: 32px;
   display: flex;
   flex-shrink: inherit;
-  margin: auto;
+  margin: 0 10px;
 }
 .myPhoto {
   max-width: 20%;
@@ -11713,15 +11713,13 @@ text-shadow: none;
 }
 .box-shadow-5 {
   box-shadow: 0 0 5px #000;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 #about .col-md-6 {
   max-width: 45%;
 }
 
-
-/*  */
-
+/* Portfolio grid styling */
 /*  SECTIONS  */
 .section {
 	clear: both;

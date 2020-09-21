@@ -70,9 +70,9 @@ const FormDialog = () => {
     <Form onSubmit={handleSubmit}>
       <MsgButton
         style={{ 
-        borderRadius:'8px',
+        borderRadius:'30px',
         borderWidth: '2px',
-        backgroundColor: '#1b1b1b',
+        backgroundColor: '#fff',
         color: '#fff',
         fontFamily: 'sans-serif',
         fontSize: '18px',
