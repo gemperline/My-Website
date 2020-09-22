@@ -70,9 +70,7 @@ export default function CCVerifyCard() {
       </CardActionArea>
       <CardActions>
         <div className="col-md-6">
-          <CCVerifyModal>
-            Learn More
-          </CCVerifyModal>
+          <CCVerifyModal/>
         </div>
         <div className="col-md-6">
             <Button className="gradient-btn gradient-btn-1" href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
