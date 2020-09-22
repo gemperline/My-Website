@@ -73,7 +73,7 @@ export default function CCVerifyCard() {
           <CCVerifyModal/>
         </div>
         <div className="col-md-6">
-            <Button className="gradient-btn gradient-btn-1" href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
+            <Button className="gradient-btn gradient-btn-1" style={{borderRadius: '30px'}} href="https://github.com/gemperline/databasemanagementtool/" target="_blank">
                 Repository
             </Button>
         </div>

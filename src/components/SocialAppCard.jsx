@@ -72,7 +72,7 @@ export default function SocialAppCard() {
           </SocialWebAppModal>
         </div>
         <div className="col-md-6">
-            <Button className="gradient-btn gradient-btn-1" href="https://github.com/gemperline/Twitter-esque-Social-App" target="_blank">
+            <Button className="gradient-btn gradient-btn-1" style={{ borderRadius: '30px' }} href="https://github.com/gemperline/Twitter-esque-Social-App" target="_blank">
                 Repository
             </Button>
         </div>

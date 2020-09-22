@@ -70,12 +70,10 @@ export default function MyWebsiteCard() {
       </CardActionArea>
       <CardActions>
         <div className="col-md-6">
-        <MyWebsiteModal className={classes.btn}>
-            Learn More
-          </MyWebsiteModal>
+        <MyWebsiteModal/>
         </div>
         <div className="col-md-6">
-            <Button className="gradient-btn gradient-btn-1" href="https://github.com/gemperline/My-Website" target="_blank">
+            <Button className="gradient-btn gradient-btn-1" style={{ borderRadius: '30px' }} href="https://github.com/gemperline/My-Website" target="_blank">
                 Repository
             </Button>
         </div>

@@ -61,7 +61,7 @@ export default function MyWebsiteModal() {
 
   return (
     <div>
-      <Button className="gradient-btn gradient-btn-1" onClick={handleOpen}>
+      <Button className="gradient-btn gradient-btn-1" style={{ borderRadius: '30px' }} onClick={handleOpen}>
         Learn More
       </Button>
       <Modal

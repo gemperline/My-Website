@@ -77,7 +77,7 @@ export default function LandingPageCard() {
           </LandingPageModal>
         </div>
         <div className="col-md-6">
-            <Button type="button" className={classes.btn && "gradient-btn gradient-btn-1"} href="https://github.com/gemperline/LandingPage" target="_blank">
+            <Button type="button" className={classes.btn && "gradient-btn gradient-btn-1"} style={{ borderRadius: '30px' }} href="https://github.com/gemperline/LandingPage" target="_blank">
                 Repository
             </Button>
         </div>
