@@ -1973,9 +1973,6 @@ pre code {
   .cta span {
     display: none;
   }
-  .cta:before {
-    content: "Mobile Coming Soon";
-  }
   .dash-icon-button {
     width: auto !important;
     height: auto !important;
@@ -11229,9 +11226,16 @@ span .fa-plus {
   }
 }
 @media all and (max-width: 968px) {
-  #about, #contact, #leftFoot {
+  #about, #leftFoot {
     display: none !important;
     visibility: hidden !important;
+  }
+  .contact-content {
+    width: 100%;
+  }
+  .contact-content img {
+    height: 100%;
+    width: auto;
   }
   #container-fluid {
     height: 100vh;
@@ -11326,6 +11330,17 @@ span .fa-plus {
   #footer h4 {
     padding-right: 30px;
     z-index:2;
+    }
+    #palms {
+      height: 100vh;
+      width: auto;
+      object-fit: cover;
+    }
+    .contact-content p {
+      width: 90% !important;
+    }
+    .myPhoto {
+      max-width: 50% !important;
     }
   }
 
@@ -11732,7 +11747,7 @@ text-shadow: none;
 .col {
   display: block;
   float: inline-start;
-  margin: 1% 0 1% 1.6%;
+  margin: 3% 0 3% 0%;
   min-width: 350px;
 }
 .col:first-child { margin-left: 0; }
@@ -11750,6 +11765,6 @@ text-shadow: none;
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
+	.col {  margin: 3% 0 3% 0% }
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }

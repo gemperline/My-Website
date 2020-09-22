@@ -57,7 +57,7 @@ class App extends React.Component {
 
         {/* Contact */}
         <div id="contact" className="container-fluid hero">
-          <img style={{ width: '100%' }} src={Palms} alt="AG"/>      
+          <img id="palms" style={{ width: '100%' }} src={Palms} alt="AG"/>      
           <div className="hero contact-content">  
             <h2>Contact Me</h2>
             <img className="myPhoto" src={myPhoto} alt="Adam Gemperline"/>    

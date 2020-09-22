@@ -16,7 +16,7 @@ export function CustomNavBar() {
                 </label>
                 <input type="checkbox" id="btn"></input>
                 <ul id="nav-list">
-                    <div id="left-nav" className="col-lg-3 col"/>"
+                    <div id="left-nav" className="col-lg-3"/>"
                     <div id="center-nav" className="col-lg-6">
                         <li className="violet"><a href="#intro">Home</a></li>
                         <li className="blue"><a href="#about">About</a></li>
