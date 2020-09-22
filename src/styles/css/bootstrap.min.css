@@ -11439,6 +11439,7 @@ span .fa-plus {
   border-radius: 100px;
   padding: 10px;
   box-shadow: 0 0 5px #000;
+  margin: 0px auto 50px;
 }
 .contact-background {
   text-align: center;
@@ -11706,8 +11707,8 @@ text-shadow: none;
 .myPhoto {
   max-width: 20%;
   padding: 5px;
-  margin: 30px auto;
-  border: 4px solid #000;
+  margin: 0px auto 50px;
+  border:1px solid #000;
   border-radius: 100px;
   box-shadow: 0 0 5px #000;
 }
